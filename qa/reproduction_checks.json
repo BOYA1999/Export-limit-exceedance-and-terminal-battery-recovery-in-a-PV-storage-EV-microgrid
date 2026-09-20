@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-09-08T12:46:09.394703+00:00",
+  "initial_archive_files": 243,
+  "dependencies": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "osqp": "1.1.1",
+    "tabulate": "0.10.0"
+  },
+  "manifest_files": 243,
+  "frozen_source_config_protocol_hashes_match": true,
+  "selection_inputs_and_winners_recomputed": true,
+  "baseline_windows_keys_resolve_as_posix_paths": true,
+  "source_arrays_and_complete_notices_match": true,
+  "solver_records": {
+    "MPC-H24+QP": 6240,
+    "MPC-H24-FRR+QP": 6240
+  },
+  "intervals": 120,
+  "inspected_files": 243,
+  "finite_numeric_checkpoints": 40,
+  "content_findings": [],
+  "text_json_jsonl_svg_and_nested_npz_content_checked": true,
+  "aggregate_outputs_byte_identical": {
+    "summary.csv": true,
+    "seed_means.csv": true,
+    "paired_intervals.csv": true,
+    "aggregation_verification.json": true
+  },
+  "executed_checks": [
+    {
+      "command": [
+        "python",
+        "src/aggregate_causal.py"
+      ],
+      "stdout": "{\"status\": \"passed\", \"daily_rows\": 910, \"trajectory_rows\": 87360, \"interval_rows\": 120, \"checks\": 55}"
+    },
+    {
+      "command": [
+        "python",
+        "artifacts/training_diagnostics_qa.py"
+      ],
+      "stdout": "{\"status\": \"PASS\", \"training_runs\": 10, \"transitions\": 460800, \"completed_episodes\": 4800, \"partial_episode_steps\": 0, \"service_failures\": 0, \"roundoff_repair_steps\": 68, \"terminal_conflict_steps\": 0, \"finite_checkpoints\": 40, \"validation_records\": 2400, \"validation_max_abs_terminal_error_kwh\": 0.0, \"validation_roundoff_repair_steps\": 23.0, \"run_contract_sha256\": \"6e6ae5214c069f9c8e0a925539fd9f2e22f2e765978791c535900af5d199ce88\", \"audit_source_sha256\": \"f6b4f8304d320f6d9f830c73dbc354fb516b13e4b6ae4b312f4328ad5e7e983d\"}"
+    },
+    {
+      "command": [
+        "python",
+        "artifacts/policy_test_qa.py"
+      ],
+      "stdout": "{\"status\": \"PASS\", \"episodes\": 650, \"steps\": 62400, \"selection_sha256\": \"f87eb74f76a5895ecdbba93392d031dc68301b7c3da4330eee32aabc50eba32b\", \"selected_budgets\": {\"PPO-QP\": 90, \"PPO-QP-no-penalty\": 90}, \"maximum_absolute_terminal_error_kwh\": 0.0, \"service_failures\": 0, \"terminal_target_conflict_steps\": 0, \"roundoff_repair_steps\": 0, \"terminal_ramp_relaxation_steps\": 650, \"execution_paths\": {\"hard_qp_solution\": 60346, \"phase2_solution\": 2054}, \"audit_source_sha256\": \"3063c7299128f7e79adacc0cd450866ab91ddfddade29724e891a25534d8ad11\"}"
+    },
+    {
+      "command": [
+        "python",
+        "portable_runner.py",
+        "synthetic-bounds"
+      ],
+      "stdout": "{\"status\": \"PASS\", \"synthetic_cases\": 64, \"explicit_infeasible_cases\": 16}"
+    },
+    {
+      "command": [
+        "python",
+        "portable_runner.py",
+        "baseline",
+        "verify"
+      ],
+      "stdout": "controller       cost  grid_excess_energy_kwh       peak  task_score\n       Rule+QP 201.478416              103.215652 205.368802  653.501179\n    MPC-H24+QP 196.103588               50.498456 230.798854  572.228795\nNetLoadRule+QP 194.117919               64.870043 230.354346  592.295403\nMPC-H24-FRR+QP 196.748437               51.657863 234.958447  575.153574"
+    }
+  ],
+  "full_day_policy_replay": [
+    {
+      "controller": "PPO-QP",
+      "seed": 20260805,
+      "day": 300,
+      "budget": 90,
+      "steps": 96,
+      "maximum_daily_metric_difference": 5.684341886080802e-14,
+      "maximum_step_difference": 2.842170943040401e-14,
+      "paths_identical": true
+    },
+    {
+      "controller": "PPO-QP-no-penalty",
+      "seed": 20260805,
+      "day": 300,
+      "budget": 90,
+      "steps": 96,
+      "maximum_daily_metric_difference": 0.0,
+      "maximum_step_difference": 2.842170943040401e-14,
+      "paths_identical": true
+    }
+  ],
+  "full_retraining_repeated_during_package_qa": false,
+  "linux_execution_performed": false,
+  "source_research_files_unchanged": true,
+  "remote_action_performed": false,
+  "new_software_license_assigned": false
+}
