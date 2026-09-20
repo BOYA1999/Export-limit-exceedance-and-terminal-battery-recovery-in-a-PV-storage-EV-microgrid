@@ -1,0 +1,25 @@
+{
+  "source": "src/causal_run.py",
+  "seeds": [
+    20260805,
+    20260806,
+    20260807,
+    20260808,
+    20260809
+  ],
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "arguments": "train --seed SEED",
+  "outputs": "artifacts/train_worker_SEED.log",
+  "python": "python",
+  "parallel_workers": 5,
+  "stage": "train_then_validation",
+  "updates": 90,
+  "rollout_steps": 512,
+  "run_contract_sha256": "6e6ae5214c069f9c8e0a925539fd9f2e22f2e765978791c535900af5d199ce88",
+  "recorded_utc": "2026-09-08T11:56:36.7981217Z",
+  "recording_note": "Recorded after all five workers were launched; per-model training elapsed times are in train summaries."
+}

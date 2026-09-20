@@ -1,0 +1,4 @@
+metric,comparator,mean_difference_ppo_qp_minus_comparator,day_cluster_ci_lower,day_cluster_ci_upper,day_clusters,fixed_ppo_seeds,bootstrap_replicates
+cost,MPC-H24-XP+QP,3.6621752051711955,2.6933788331104056,4.6474604166448845,65,5,20000
+peak,MPC-H24-XP+QP,-1.6649013306426044,-6.129530411690548,2.9331063275226574,65,5,20000
+export_excess_energy_kwh,MPC-H24-XP+QP,-8.567541193252909,-15.797347988116867,-3.0058822104950806,65,5,20000

@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "controllers": [
+    "Rule+QP",
+    "MPC-H24+QP",
+    "NetLoadRule+QP",
+    "MPC-H24-FRR+QP"
+  ],
+  "episodes": 260,
+  "steps": 24960,
+  "selected_rule_cap_kw": 60,
+  "service_failures": 0,
+  "selection_hashes_unchanged": true,
+  "outputs": {
+    "baseline_execution_MPC-H24+QP.json": "15ab53f315e71553b5c8aaa026dee3a39767dd00c76d2cc343142977c76ed04d",
+    "baseline_execution_MPC-H24-FRR+QP.json": "1007e31adce6fc656de061ef1145705960565563024d933f17d863d3ac0a9e08",
+    "baseline_execution_NetLoadRule+QP.json": "d6d276df93cf2a5aa63edf244bac9c61c94cbb1f2177efe7328e3c7205b5fb58",
+    "baseline_execution_Rule+QP.json": "51996c749abe9dec136fc11b78ac38cab2c5219e1ed7806399464050fccd1dab",
+    "baseline_legacy_replay_check.json": "db9a2f7c39441c4806377fd397ef4878c316dc7216a72ba7b0570916b5d7065e",
+    "baseline_MPC-H24+QP.csv": "9fb6ce962f60d31d32af7cf7433971a971dff12c8ed2311c17dadfb8c17a825f",
+    "baseline_MPC-H24-FRR+QP.csv": "68240445763e164a49db8aeed410e059460327b9c8bbb4376e2733e0310ebeba",
+    "baseline_mpc_delta.patch": "db72b23ed4ee67a09b5104d946fe8495b2a8d100668f6fce81a8b1c8019d8583",
+    "baseline_NetLoadRule+QP.csv": "77fef6d3245867f3874d93dfb392d6f3578506506bcff08be885b03279a241bc",
+    "baseline_revision_means.csv": "be5ab55bd12eaa03fb6280c7fac8c815f4c36f50ad2d5ffc51e41de91ee9d978",
+    "baseline_Rule+QP.csv": "e3df6757ed065149d31a424c6331db81e775820fdfa6f6bf6182e45148dfc871",
+    "baseline_run_contract.json": "4ec54f23575e01b7d1c9d0c3a67363d9498348d0cd34ed17d6ea370e066e6e01",
+    "baseline_selection.json": "501c8104da36674caca64008045c941c05d8417151fcd7560082c5f4090e24cf",
+    "baseline_smoke.json": "1ce4a0a4cabad086c2697f46f4f18b38a60567f05d85692ec3458f28c759e445",
+    "baseline_smoke.log": "3c219825e17825d4420d15b989ccbe6d5b2eef7b8bd57e18c68e5cd031eb01ac",
+    "baseline_test.log": "60a2ca4b103c4f75f702ea1802d3094f2ce38529e62367d06b60848c6853af3d",
+    "baseline_validation.log": "19ae17b059e5436eaf70b404c56c7770fae599472e332e25d65e013a4032f66f",
+    "mpc_diagnostics_MPC-H24+QP.jsonl": "c315e2c096e195e19d117546fe95f8d37a2d1f80206172ba0d454114798476cb",
+    "mpc_diagnostics_MPC-H24-FRR+QP.jsonl": "704174b948579abfaba1004a6e10c1ed229bac5f8bc6d11f7c7f5c6a67460486",
+    "trajectory_MPC-H24+QP.csv": "2637b6a23030798a338a6276b5c7abe7e87348e7d42b63dfc1ab010946131946",
+    "trajectory_MPC-H24-FRR+QP.csv": "5cd7d4e5691e03b23d7b68aae33493b7ad6a5d25680f418eac12ae880e41d362",
+    "trajectory_NetLoadRule+QP.csv": "b72e3d97c5e6e387ab36c205f627e4bab28e92dd40c6592be298f099c0fb942c",
+    "trajectory_Rule+QP.csv": "3a286c783a727d0fc7cf6ed6a29d3f6620547d2a2dd9c950918be34ce3db808b"
+  }
+}

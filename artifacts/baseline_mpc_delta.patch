@@ -1,0 +1,43 @@
+--- historical/src/matched_mpc.py
++++ revised/src/matched_mpc.py
+@@ -9,7 +9,7 @@
+ from run_experiment import raw_from_physical, rule_action
+ 
+ 
+-def matched_mpc_action(env, horizon=24):
++def matched_mpc_action(env, horizon=24, future_ramp_relaxed=False):
+     started = time.perf_counter()
+     H = min(int(horizon), env.n - env.t, env.h)
+     L = env.n - env.t
+@@ -37,6 +37,10 @@
+     target = env.cfg["bess"]["soc_initial"] * env.E
+     lower[ix["soc"][-1]] = upper[ix["soc"][-1]] = target
+     upper[ix["ev"]] = np.minimum(env.ev_max * active, env.ev_remaining / env.dt)
++    current_bounds = env._bounds() if future_ramp_relaxed else None
++    if current_bounds is not None:
++        lower[ix["ev"][0]] = current_bounds[2] * env.ev_max
++        upper[ix["ev"][0]] = current_bounds[3] * env.ev_max
+     upper[ix["gi"]] = np.maximum(0.0, base + env.ev_max * active + env.P)
+     upper[ix["ge"]] = np.maximum(0.0, -base + env.P)
+     objective[ix["gi"]] = (forecast["price"] / 10.0 + 1.8 * forecast["carbon"]) * env.dt
+@@ -61,7 +65,10 @@
+         add({ix["dis"][j]: 1, ix["charge_on"][j]: env.P}, high=env.P)
+         add({ix["soc"][j + 1]: 1, ix["soc"][j]: -1, ix["ch"][j]: -env.eta_c * env.dt, ix["dis"][j]: env.dt / env.eta_d}, 0, 0)
+         ramp = {ix["dis"][j]: 1, ix["ch"][j]: -1}
+-        if j:
++        if future_ramp_relaxed:
++            if j == 0:
++                add(ramp, current_bounds[0], current_bounds[1])
++        elif j:
+             ramp.update({ix["dis"][j - 1]: -1, ix["ch"][j - 1]: 1})
+             add(ramp, -env.ramp, env.ramp)
+         else:
+@@ -98,6 +105,8 @@
+         "peak_objective_error_bound": H * 0.00035 * env.dt * 10.0 ** 2 / 4.0,
+         "export_revenue": 0.0, "pv_curtailment_control": False,
+         "tail_scope": "battery feasibility only; no exogenous values outside the objective horizon",
++        "planning_ramp_mode": "future relaxed; current command uses common execution box" if future_ramp_relaxed else "hard 45 kW throughout remaining day",
++        "current_battery_bounds_kw": list(current_bounds[:2]) if current_bounds is not None else None,
+     }
+     if feasible:
+         p = float(x[ix["dis"][0]] - x[ix["ch"][0]])

@@ -1,0 +1,19 @@
+controller,day,step,status,fallback,seconds,mip_gap,constraint_violation_max,message,hour,evaluation_day_block,within_day_block
+MPC-H24+QP,300,48,2,True,0.001989199998206459,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),12.0,300-319,12-18
+MPC-H24+QP,300,49,2,True,0.0019037000020034611,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),12.25,300-319,12-18
+MPC-H24+QP,301,45,2,True,0.0018495000040275045,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),11.25,300-319,06-12
+MPC-H24+QP,302,33,1,False,1.0038933000032557,0.011725010739184758,1.951150352397235e-11,Time limit reached. (HiGHS Status 13: Time limit reached),8.25,300-319,06-12
+MPC-H24+QP,302,34,1,False,1.0051856999998563,0.011030978450202768,8.149925179168349e-12,Time limit reached. (HiGHS Status 13: Time limit reached),8.5,300-319,06-12
+MPC-H24+QP,307,48,2,True,0.0020359999980428256,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),12.0,300-319,12-18
+MPC-H24+QP,308,34,1,False,1.0055871000004117,0.0055328698298670285,1.0984730918605462e-12,Time limit reached. (HiGHS Status 13: Time limit reached),8.5,300-319,06-12
+MPC-H24+QP,308,43,2,True,0.0019331000003148802,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),10.75,300-319,06-12
+MPC-H24+QP,308,95,2,True,0.0007312000016099773,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),23.75,300-319,18-24
+MPC-H24+QP,309,40,1,False,1.0041009999986272,0.0022810375573841025,1.2789769243681803e-12,Time limit reached. (HiGHS Status 13: Time limit reached),10.0,300-319,06-12
+MPC-H24+QP,322,46,2,True,0.001764600005117245,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),11.5,320-339,06-12
+MPC-H24+QP,323,33,1,False,1.0033970999938902,0.006053728222596736,2.842170943040401e-14,Time limit reached. (HiGHS Status 13: Time limit reached),8.25,320-339,06-12
+MPC-H24+QP,329,46,2,True,0.001728800001728814,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),11.5,320-339,06-12
+MPC-H24+QP,336,42,2,True,0.0020121999987168238,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),10.5,320-339,06-12
+MPC-H24+QP,342,51,2,True,0.0023212000014609657,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),12.75,340-364,12-18
+MPC-H24+QP,343,46,2,True,0.0018129000018234365,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),11.5,340-364,06-12
+MPC-H24+QP,356,49,2,True,0.0019812000027741306,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),12.25,340-364,12-18
+MPC-H24+QP,357,45,2,True,0.001965700001164805,,,The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None),11.25,340-364,06-12

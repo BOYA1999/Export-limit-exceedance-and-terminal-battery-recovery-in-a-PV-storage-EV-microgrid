@@ -1,0 +1,14 @@
+{
+  "controller": "Rule+QP",
+  "command": [
+    "python",
+    "src/review_baselines.py",
+    "test"
+  ],
+  "started_utc": "2026-09-08T11:57:30.265125+00:00",
+  "selection_sha256": "501c8104da36674caca64008045c941c05d8417151fcd7560082c5f4090e24cf",
+  "completed_utc": "2026-09-08T11:57:51.009120+00:00",
+  "elapsed_seconds": 20.706938899995293,
+  "episodes": 65,
+  "steps": 6240
+}

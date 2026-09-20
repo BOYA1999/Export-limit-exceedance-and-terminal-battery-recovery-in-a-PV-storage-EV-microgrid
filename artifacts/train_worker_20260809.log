@@ -1,0 +1,10 @@
+trained PPO-QP seed=20260809 updates=15 seconds=29.0
+trained PPO-QP seed=20260809 updates=30 seconds=55.6
+trained PPO-QP seed=20260809 updates=45 seconds=81.1
+trained PPO-QP seed=20260809 updates=90 seconds=139.4
+validation complete PPO-QP seed=20260809
+trained PPO-QP-no-penalty seed=20260809 updates=15 seconds=18.7
+trained PPO-QP-no-penalty seed=20260809 updates=30 seconds=38.3
+trained PPO-QP-no-penalty seed=20260809 updates=45 seconds=57.3
+trained PPO-QP-no-penalty seed=20260809 updates=90 seconds=113.9
+validation complete PPO-QP-no-penalty seed=20260809

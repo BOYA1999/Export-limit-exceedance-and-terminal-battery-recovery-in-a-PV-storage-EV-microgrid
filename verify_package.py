@@ -36,7 +36,7 @@ def content_audit(root):
     findings=[]; models=0; files=0
     patterns=[r'(?i)(?<![a-z0-9])[a-z]:[\\/]',r'(?i)/(?:'+'Users|home'+r')/[^\s/]+',r'(?i)sk-[a-z0-9]{16,}',r'(?i)(?:api[_-]?key|password|access[_-]?token)\s*[:=]\s*["\']?([a-z0-9/+_=.-]{12,})',r'(?i)[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}',r'\\\\[A-Za-z0-9_.-]+\\[A-Za-z0-9_.-]+']
     for path in sorted(root.rglob('*')):
-        if not path.is_file():
+        if not path.is_file() or '.git' in path.parts:
             continue
         files+=1
         if path.suffix=='.npz':
@@ -80,7 +80,7 @@ def integrity(root):
         assert safe_name(name) and name not in expected
         assert sha(root/name)==digest,name
         expected[name]=digest
-    actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
+    actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file() and '.git' not in p.parts}
     assert actual==set(expected)|{'MANIFEST.sha256'}
     artifacts=root/'artifacts'; contract=load(artifacts/'run_contract.json')
     assert contract['protocol_sha256']==sha(root/'PLAN.md') and contract['config_sha256']==sha(root/'configs/experiment.json')

@@ -1,0 +1,10 @@
+{
+  "seed": 20260808,
+  "selection_sha256": "f87eb74f76a5895ecdbba93392d031dc68301b7c3da4330eee32aabc50eba32b",
+  "selected_budgets": {
+    "PPO-QP": 90,
+    "PPO-QP-no-penalty": 90
+  },
+  "started_unix_seconds": 1788868999.3807478,
+  "run_contract_sha256": "6e6ae5214c069f9c8e0a925539fd9f2e22f2e765978791c535900af5d199ce88"
+}

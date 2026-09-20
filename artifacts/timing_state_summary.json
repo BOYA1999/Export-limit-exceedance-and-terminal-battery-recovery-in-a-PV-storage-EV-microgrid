@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "scope": "Serial repeated execution costs on 25 common Rule-derived validation states; not a full state-distribution estimate or deployment worst-case bound.",
+  "checks": {
+    "exact_25_requested_states": true,
+    "all_reconstructed_observations_identical": true,
+    "all_750_timed_calls": true,
+    "all_150_warmup_calls": true,
+    "five_repeats_per_controller_state": true,
+    "all_timed_numeric_finite": true,
+    "all_warmup_numeric_finite": true,
+    "positive_timing": true,
+    "one_thread_environment_variables": true
+  },
+  "summaries": [
+    {
+      "controller": "Rule+QP",
+      "calls": 125,
+      "unique_states": 25,
+      "mean_ms": 1.8239128,
+      "median_ms": 1.4887,
+      "p90_ms": 3.7848800000000002,
+      "p95_ms": 3.8333600000000003,
+      "p99_ms": 3.9680280000000003,
+      "maximum_ms": 4.0123,
+      "minimum_ms": 1.388,
+      "mpc_status_counts": {},
+      "mpc_fallback_calls": 0,
+      "qp_execution_path_counts": {
+        "hard_qp_solution": 110,
+        "phase2_solution": 15
+      },
+      "maximum_within_state_executed_power_spread_kw": 0.0
+    },
+    {
+      "controller": "MPC-H24+QP",
+      "calls": 125,
+      "unique_states": 25,
+      "mean_ms": 43.1601112,
+      "median_ms": 19.6939,
+      "p90_ms": 54.12594,
+      "p95_ms": 228.94262,
+      "p99_ms": 450.91576000000003,
+      "maximum_ms": 454.2195,
+      "minimum_ms": 2.2922,
+      "mpc_status_counts": {
+        "0": 125
+      },
+      "mpc_fallback_calls": 0,
+      "qp_execution_path_counts": {
+        "hard_qp_solution": 110,
+        "phase2_solution": 15
+      },
+      "maximum_within_state_executed_power_spread_kw": 0.0
+    },
+    {
+      "controller": "NetLoadRule+QP",
+      "calls": 125,
+      "unique_states": 25,
+      "mean_ms": 1.8226407999999996,
+      "median_ms": 1.5357,
+      "p90_ms": 3.72602,
+      "p95_ms": 3.80462,
+      "p99_ms": 3.9652960000000004,
+      "maximum_ms": 4.062,
+      "minimum_ms": 1.316,
+      "mpc_status_counts": {},
+      "mpc_fallback_calls": 0,
+      "qp_execution_path_counts": {
+        "hard_qp_solution": 110,
+        "phase2_solution": 15
+      },
+      "maximum_within_state_executed_power_spread_kw": 0.0
+    },
+    {
+      "controller": "MPC-H24-FRR+QP",
+      "calls": 125,
+      "unique_states": 25,
+      "mean_ms": 23.9045112,
+      "median_ms": 18.7741,
+      "p90_ms": 31.82336,
+      "p95_ms": 85.98568,
+      "p99_ms": 144.009984,
+      "maximum_ms": 144.6727,
+      "minimum_ms": 2.2974,
+      "mpc_status_counts": {
+        "0": 125
+      },
+      "mpc_fallback_calls": 0,
+      "qp_execution_path_counts": {
+        "hard_qp_solution": 110,
+        "phase2_solution": 15
+      },
+      "maximum_within_state_executed_power_spread_kw": 0.0
+    },
+    {
+      "controller": "PPO-QP",
+      "calls": 125,
+      "unique_states": 25,
+      "mean_ms": 1.8083048000000002,
+      "median_ms": 1.4878,
+      "p90_ms": 3.76546,
+      "p95_ms": 3.8581,
+      "p99_ms": 4.870452000000001,
+      "maximum_ms": 5.108,
+      "minimum_ms": 1.3469,
+      "mpc_status_counts": {},
+      "mpc_fallback_calls": 0,
+      "qp_execution_path_counts": {
+        "hard_qp_solution": 110,
+        "phase2_solution": 15
+      },
+      "maximum_within_state_executed_power_spread_kw": 0.0
+    },
+    {
+      "controller": "PPO-QP-no-penalty",
+      "calls": 125,
+      "unique_states": 25,
+      "mean_ms": 1.7400495999999999,
+      "median_ms": 1.4401,
+      "p90_ms": 3.7198200000000003,
+      "p95_ms": 3.7910799999999996,
+      "p99_ms": 3.8622280000000004,
+      "maximum_ms": 3.9572,
+      "minimum_ms": 1.3335,
+      "mpc_status_counts": {},
+      "mpc_fallback_calls": 0,
+      "qp_execution_path_counts": {
+        "hard_qp_solution": 110,
+        "phase2_solution": 15
+      },
+      "maximum_within_state_executed_power_spread_kw": 0.0
+    }
+  ],
+  "warmup_mpc_status_counts": {
+    "0": 50
+  },
+  "warmup_mpc_fallback_calls": 0,
+  "warmup_qp_path_counts": {
+    "hard_qp_solution": 132,
+    "phase2_solution": 18
+  },
+  "artifact_sha256": {
+    "timing_state_rows.csv": "50a06b7265b48805cf430140ef9eb30ffeb775421bf83af765e80e3d927c904f",
+    "timing_state_warmup_rows.csv": "aedf9c0775986f762f225976e3ce28cc6a2c52e0f6afde0faa55d57877811f35",
+    "timing_state_protocol.json": "826fcd5e04ee47e4bd1b1cce334e8657ea7a99aab0a8a8b53c7a409f5c9723f7"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "training_runs": 10,
+  "transitions": 460800,
+  "completed_episodes": 4800,
+  "partial_episode_steps": 0,
+  "service_failures": 0,
+  "roundoff_repair_steps": 68,
+  "terminal_conflict_steps": 0,
+  "finite_checkpoints": 40,
+  "validation_records": 2400,
+  "validation_max_abs_terminal_error_kwh": 0.0,
+  "validation_roundoff_repair_steps": 23.0,
+  "run_contract_sha256": "6e6ae5214c069f9c8e0a925539fd9f2e22f2e765978791c535900af5d199ce88",
+  "audit_source_sha256": "f6b4f8304d320f6d9f830c73dbc354fb516b13e4b6ae4b312f4328ad5e7e983d"
+}

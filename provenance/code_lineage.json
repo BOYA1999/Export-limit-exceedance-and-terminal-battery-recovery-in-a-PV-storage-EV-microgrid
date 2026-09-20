@@ -23,7 +23,7 @@
   },
   "packaging_helpers": {
     "portable_runner.py": "9e4d08308cecb7de3d8f67de6bceb016a79a2b70859215ef6ac027ba0235680e",
-    "verify_package.py": "ff27a075347d9b98fb5951dfcd0c2b170712aecdcf0955e51d7168dcc386a6a5"
+    "verify_package.py": "4e10a2a36010f00d1023b42496a5d10cbd26f2acc4463cb9573093dca5a7215e"
   },
   "historical_auxiliary_dependencies": [
     "The full bounds_regression.py replay needs older modules/configuration and four old checkpoints. The portable synthetic-bounds entry point does not.",

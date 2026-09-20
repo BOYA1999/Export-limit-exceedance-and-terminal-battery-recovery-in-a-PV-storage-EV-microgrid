@@ -1,0 +1,25 @@
+{
+  "fit": {
+    "load_mean": 127.67349642474858,
+    "pv_mean": 0.20203565329861112,
+    "price_mean": 0.03536513194444445,
+    "price_sd": 0.0822991824073189,
+    "fit_hours": 5760
+  },
+  "chronological_partition": [
+    240,
+    60,
+    65
+  ],
+  "source_hashes": {
+    "annual_load_pattern_CAMX_baseline.csv": "23b2b22da47c8173627261d4afd96e8f6539ebdd6145175aa3c08d302a875630",
+    "cambium_grid_data_California_cambium_co2_rate_lrmer.csv": "7f166c8c400b89a61d227478f58575cf52021fb29e342af22a8c28c1f9dd68af",
+    "cambium_grid_data_California_cambium_grid_value.csv": "2c93b5e048698ce96992047c628517b74cebe48d587ba34c0ea8208513104ff2",
+    "pvwatts_pasadena_1kw.json": "b5604630e16bfe4aa8cefae779c1a258aaeecbdaaf89626ee47ff936e061caa1"
+  },
+  "split_hashes": {
+    "train": "5209e2a808301c4f6690e6e19d9b8e849be8dc1bd90c2478b5e72ef78186d770",
+    "validation": "e0bb3134b268c2051cfb4516409876b56f5a1935a3ea33f928c43e10edf56805",
+    "test": "16c5bac154c33865f609fcfd508466c05b484186e7603e0c239710dd6def0cb1"
+  }
+}

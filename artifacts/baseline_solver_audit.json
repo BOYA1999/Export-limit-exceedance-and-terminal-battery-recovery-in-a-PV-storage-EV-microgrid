@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "summaries": [
+    {
+      "controller": "MPC-H24+QP",
+      "calls": 6240,
+      "status_counts": {
+        "0": 6222,
+        "2": 13,
+        "1": 5
+      },
+      "optimal_accepted": 6222,
+      "time_limit_incumbents": 5,
+      "fallbacks": 13,
+      "fallback_status_counts": {
+        "2": 13
+      },
+      "accepted_gap": {
+        "count": 6227,
+        "minimum": 0.0,
+        "median": 0.0,
+        "p95": 0.0007820018769886547,
+        "maximum": 0.011725010739184758,
+        "above_0_001": 5
+      },
+      "accepted_constraint_violation_max": 8.326178639817696e-07,
+      "nonoptimal_by_evaluation_day_block": {
+        "300-319": 10,
+        "320-339": 4,
+        "340-364": 4
+      },
+      "nonoptimal_by_within_day_block": {
+        "12-18": 5,
+        "06-12": 12,
+        "18-24": 1
+      },
+      "time_limit_by_evaluation_day_block": {
+        "300-319": 4,
+        "320-339": 1
+      },
+      "time_limit_by_within_day_block": {
+        "06-12": 5
+      },
+      "accepted_plans_with_max_ramp_above_45kw": 0,
+      "executed_steps_with_ramp_above_45kw": 12,
+      "execution_record": {
+        "controller": "MPC-H24+QP",
+        "command": [
+          "python",
+          "src/review_baselines.py",
+          "test"
+        ],
+        "started_utc": "2026-09-08T11:57:51.018119+00:00",
+        "selection_sha256": "501c8104da36674caca64008045c941c05d8417151fcd7560082c5f4090e24cf",
+        "completed_utc": "2026-09-08T12:01:57.965140+00:00",
+        "elapsed_seconds": 246.91018290000648,
+        "episodes": 65,
+        "steps": 6240
+      },
+      "diagnostics_sha256": "c315e2c096e195e19d117546fe95f8d37a2d1f80206172ba0d454114798476cb",
+      "historical_max_absolute_daily_metric_difference": {
+        "cost": 0.0,
+        "carbon": 0.0,
+        "task_score": 0.0,
+        "peak": 0.0,
+        "grid_excess_energy_kwh": 0.0,
+        "terminal_soc_error_kwh": 0.0,
+        "mean_action_correction": 0.0
+      },
+      "historical_time_limit_incumbents": 7,
+      "historical_fallbacks": 13
+    },
+    {
+      "controller": "MPC-H24-FRR+QP",
+      "calls": 6240,
+      "status_counts": {
+        "0": 6240
+      },
+      "optimal_accepted": 6240,
+      "time_limit_incumbents": 0,
+      "fallbacks": 0,
+      "fallback_status_counts": {},
+      "accepted_gap": {
+        "count": 6240,
+        "minimum": 0.0,
+        "median": 0.0,
+        "p95": 0.0005830509884906613,
+        "maximum": 0.000999927129432849,
+        "above_0_001": 0
+      },
+      "accepted_constraint_violation_max": 5.412584869191051e-07,
+      "nonoptimal_by_evaluation_day_block": {},
+      "nonoptimal_by_within_day_block": {},
+      "time_limit_by_evaluation_day_block": {},
+      "time_limit_by_within_day_block": {},
+      "accepted_plans_with_max_ramp_above_45kw": 6093,
+      "executed_steps_with_ramp_above_45kw": 128,
+      "execution_record": {
+        "controller": "MPC-H24-FRR+QP",
+        "command": [
+          "python",
+          "src/review_baselines.py",
+          "test"
+        ],
+        "started_utc": "2026-09-08T12:02:14.148292+00:00",
+        "selection_sha256": "501c8104da36674caca64008045c941c05d8417151fcd7560082c5f4090e24cf",
+        "completed_utc": "2026-09-08T12:04:36.319357+00:00",
+        "elapsed_seconds": 142.13450010000088,
+        "episodes": 65,
+        "steps": 6240
+      },
+      "diagnostics_sha256": "704174b948579abfaba1004a6e10c1ed229bac5f8bc6d11f7c7f5c6a67460486"
+    }
+  ],
+  "scope": "Actual deterministic baseline runs, conducted concurrently with retraining. Wall-clock limits may depend on machine load; no best-run selection or selective rerun was performed.",
+  "source_sha256": "0e0c895011abbe91274b0b8d3c9d1082ddce9410cac4b107593474a4235a13f1",
+  "events_sha256": "bfd44c615f4fb48d45351fd2b3ac32dfdd82e6151a27743bbc42ea39cc3388da"
+}

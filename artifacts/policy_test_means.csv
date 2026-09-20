@@ -1,0 +1,3 @@
+controller,cost,carbon,task_score,peak,grid_excess_energy_kwh,terminal_soc_error_kwh,terminal_roundoff_repair_steps,terminal_ramp_relaxation_steps
+PPO-QP,199.6180733752752,293.06888275454395,590.4262913607407,229.2162713745312,42.24492823376603,0.0,0.0,1.0
+PPO-QP-no-penalty,199.7847206095457,293.27658779715296,589.9808246855016,229.2162713745276,41.43199696749602,0.0,0.0,1.0

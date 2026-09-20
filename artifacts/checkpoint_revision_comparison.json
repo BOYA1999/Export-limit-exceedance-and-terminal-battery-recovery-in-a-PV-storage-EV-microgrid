@@ -1,0 +1,6 @@
+{
+  "models": 40,
+  "unchanged_arrays_models": 24,
+  "changed_arrays_models": 16,
+  "note": "This compares stored weights, not historical training-event counts; new diagnostics cannot backfill old unrecorded service failures."
+}

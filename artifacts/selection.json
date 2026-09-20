@@ -1,0 +1,32 @@
+{
+  "selected_budgets": {
+    "PPO-QP": 90,
+    "PPO-QP-no-penalty": 90
+  },
+  "selection_inputs": {
+    "validation_PPO-QP-no-penalty_20260805.csv": "98732de25d0a83c8ea3142c06150e760cb26c58db06c5088b66f48ce73488332",
+    "validation_PPO-QP-no-penalty_20260806.csv": "8a26af0b13d470bbcd2bce65e48880bf3e379fa034321f80bc630d40ca966888",
+    "validation_PPO-QP-no-penalty_20260807.csv": "bcbcadfecc397b2ef37eafecde232b0a797479d41f458f837881b1155942e94c",
+    "validation_PPO-QP-no-penalty_20260808.csv": "a89f0d1797881d0685459cd3a36e43a888ad4f41e1291bc7bd340f02a7624a28",
+    "validation_PPO-QP-no-penalty_20260809.csv": "9644b22149d3870a7ebe8221e24c447559b95d59755386b9ae378b4f0f932dba",
+    "validation_PPO-QP_20260805.csv": "dce26838c5d1b3466bcaf47f38b5ea6dda35211b6fb3863f7f2e1afc11f81636",
+    "validation_PPO-QP_20260806.csv": "8e4f8d07085052eb42f626ebc06cbee63d455272e2f198cefad386e4404d0db6",
+    "validation_PPO-QP_20260807.csv": "452fe64db6215dc3e25dadcd6f54572eacc1f1361564f00f7368d3a7c77a300a",
+    "validation_PPO-QP_20260808.csv": "bc29027e703ed59222ebef7022cbdc57e4a0039f34ef46a6f27a4d3f2653203a",
+    "validation_PPO-QP_20260809.csv": "9708c5bd3f78ac4056c96340b9abfaec0807bd18b77da5972c47a658752c23e7"
+  },
+  "selected_model_hashes": {
+    "PPO-QP_20260805_u90.npz": "2765337e0dd8d25708072de6c0429fc5e3673034c7fb4198d485b321a7f53131",
+    "PPO-QP_20260806_u90.npz": "f69ad0267012f1fc7cad3f7fb1ecc3b423f002e59bc9742012fa4366c6aa3b29",
+    "PPO-QP_20260807_u90.npz": "8ebc2f7de716e8ea18537914f069be62d1cabee6e15fa204c3f19923d8dac1a0",
+    "PPO-QP_20260808_u90.npz": "51f429c47c5911356a2bdde044a829755941be5319f5b0e3b14c0eec65e57f59",
+    "PPO-QP_20260809_u90.npz": "d0c848b3b3ba3daa1d80972a10be4e92e7cde403ba902f8296e9ece284dea623",
+    "PPO-QP-no-penalty_20260805_u90.npz": "6e10d8e9735277b620d054fd303085ebbb9afc3b5e03827055b6b23731cd8a3b",
+    "PPO-QP-no-penalty_20260806_u90.npz": "479efe79cce31ed8cd75117271d2dfa9c0fa462ae3e3a5b6d8cba9d8c843bbce",
+    "PPO-QP-no-penalty_20260807_u90.npz": "cf06813f6d60537e5d5c8a876080c61175552fd8440615cb6b7c6422654fec87",
+    "PPO-QP-no-penalty_20260808_u90.npz": "4d9028ce8fb5a3816fbd1bbb376a2197f9b29e659b158fbb06899c32b1aa9fd0",
+    "PPO-QP-no-penalty_20260809_u90.npz": "183f081f834b0bd415ad31d4a55218d37ecb6e8c96eb2dce6987daf5ccb98a80"
+  },
+  "test_evaluation_not_started": true,
+  "run_contract_sha256": "6e6ae5214c069f9c8e0a925539fd9f2e22f2e765978791c535900af5d199ce88"
+}

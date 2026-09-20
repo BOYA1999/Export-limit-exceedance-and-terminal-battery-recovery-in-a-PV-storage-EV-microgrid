@@ -1,0 +1,23 @@
+{
+  "stage": "selected_policy_test",
+  "recorded_utc": "2026-09-08T12:03:57.139242+00:00",
+  "recording_note": "Recorded after all five test workers were launched; per-worker start times are in test_receipt_SEED.json.",
+  "seeds": [
+    20260805,
+    20260806,
+    20260807,
+    20260808,
+    20260809
+  ],
+  "python": "python",
+  "source": "src/causal_run.py",
+  "arguments": "test --seed SEED",
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "parallel_workers": 5,
+  "selection_sha256": "f87eb74f76a5895ecdbba93392d031dc68301b7c3da4330eee32aabc50eba32b",
+  "run_contract_sha256": "6e6ae5214c069f9c8e0a925539fd9f2e22f2e765978791c535900af5d199ce88"
+}

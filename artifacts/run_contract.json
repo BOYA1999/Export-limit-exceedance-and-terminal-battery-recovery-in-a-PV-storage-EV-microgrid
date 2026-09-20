@@ -1,0 +1,85 @@
+{
+  "protocol_sha256": "fa9d281f24fd989c606b5935cb222eb9234b74d9432ac38033427ab79c78c042",
+  "code_hashes": {
+    "run_experiment.py": "672112a01aff61283b0024eee6d942f2502b3574946ed57ea31942fd07258267",
+    "causal_run.py": "1f74767fdab1f0184be2ada2b818a9624f407718b2e5473dd6de8a63048d8c3c"
+  },
+  "config_sha256": "1ab590e844b1b47dd1248e937caea784e04af90baf4ba49a0a77f1bd4dd0a1df",
+  "config": {
+    "dt_hours": 0.25,
+    "steps_per_day": 96,
+    "forecast_steps": 24,
+    "train_days": 240,
+    "validation_days": 60,
+    "test_days": 65,
+    "seeds": [
+      20260805,
+      20260806,
+      20260807,
+      20260808,
+      20260809
+    ],
+    "bess": {
+      "energy_kwh": 250.0,
+      "power_kw": 100.0,
+      "soc_min": 0.1,
+      "soc_max": 0.9,
+      "soc_initial": 0.5,
+      "eta_charge": 0.95,
+      "eta_discharge": 0.95,
+      "ramp_kw": 45.0
+    },
+    "loads": {
+      "ev_max_kw": 60.0,
+      "lighting_base_kw": 30.0,
+      "lighting_min_fraction": 0.5,
+      "grid_max_kw": 260.0,
+      "grid_min_kw": -40.0
+    },
+    "projection": {
+      "weights": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "strategy": "lexicographic",
+      "qp_rho": 1.0,
+      "qp_max_iter": 20000,
+      "grid_scale_kw": 100.0,
+      "slack_epsilon": 0.01,
+      "trigger_tolerance": 0.001
+    },
+    "ppo": {
+      "hidden": 48,
+      "rollout_steps": 512,
+      "epochs": 3,
+      "minibatch": 64,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip": 0.2,
+      "learning_rate": 0.0003,
+      "updates": 90
+    }
+  },
+  "seeds": [
+    20260805,
+    20260806,
+    20260807,
+    20260808,
+    20260809
+  ],
+  "budgets": [
+    15,
+    30,
+    45,
+    90
+  ],
+  "variants": {
+    "PPO-QP": 0.1,
+    "PPO-QP-no-penalty": 0.0
+  },
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "test_history": "Previously inspected holdout; causal chronological reanalysis, not untouched external validation"
+}

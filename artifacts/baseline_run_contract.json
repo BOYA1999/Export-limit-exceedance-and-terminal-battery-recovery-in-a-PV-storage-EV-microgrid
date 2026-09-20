@@ -1,0 +1,45 @@
+{
+  "hashes": {
+    "PLAN.md": "fa9d281f24fd989c606b5935cb222eb9234b74d9432ac38033427ab79c78c042",
+    "baseline_protocol.md": "9b2006766b80af7af18bc10f0ca257917eeb1db1015ea290cf4d3bc7da7c33d6",
+    "configs\\experiment.json": "1ab590e844b1b47dd1248e937caea784e04af90baf4ba49a0a77f1bd4dd0a1df",
+    "src\\run_experiment.py": "672112a01aff61283b0024eee6d942f2502b3574946ed57ea31942fd07258267",
+    "src\\causal_run.py": "1f74767fdab1f0184be2ada2b818a9624f407718b2e5473dd6de8a63048d8c3c",
+    "src\\matched_mpc.py": "8e0a1c25f3200fe8fc764c16f4262ae8100ff90b74f73f490b5c3b707db6dd24",
+    "src\\review_baselines.py": "a4c474932a3118f9bbdf764003cc9b9e51f60f67a40fc43a582a4c13582ea863"
+  },
+  "controllers": [
+    "Rule+QP",
+    "MPC-H24+QP",
+    "NetLoadRule+QP",
+    "MPC-H24-FRR+QP"
+  ],
+  "rule_caps_kw": [
+    35,
+    60,
+    100
+  ],
+  "selection_order": [
+    "service_failure",
+    "grid_excess_energy_kwh",
+    "cost",
+    "mean_action_correction",
+    "cap_kw"
+  ],
+  "command": [
+    "python",
+    "src/review_baselines.py",
+    "validate"
+  ],
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "scipy": "1.17.1",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "started_utc": "2026-09-08T11:56:11.874586+00:00",
+  "test_started": false
+}

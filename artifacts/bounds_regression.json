@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "energy_tolerance_kwh": 1e-08,
+  "power_tolerance_kw": 3.7999999999999996e-08,
+  "synthetic_cases": 64,
+  "synthetic_infeasible_explicit_failures": 16,
+  "historical_cases": 14,
+  "maximum_fixed_terminal_error_kwh": 0.0,
+  "historical_checkpoint_sources": "Historical checkpoints replayed in the fixed environment; these are regression evidence, not newly trained candidates.",
+  "code_hashes": {
+    "run_experiment.py": "672112a01aff61283b0024eee6d942f2502b3574946ed57ea31942fd07258267",
+    "causal_run.py": "1f74767fdab1f0184be2ada2b818a9624f407718b2e5473dd6de8a63048d8c3c",
+    "bounds_regression.py": "27565a57e9d3187e2826a0af833e7edf7b490cbabbc3fcf60182bda94558d9bd"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "Serial repeated execution costs on 25 common Rule-derived validation states; not a full state-distribution estimate or deployment worst-case bound.",
+  "warmups": 25,
+  "summary": {
+    "controller": "MPC-H24-XP+QP",
+    "calls": 125,
+    "unique_states": 25,
+    "mean_ms": 108.91822719999998,
+    "median_ms": 30.7113,
+    "p95_ms": 538.74662,
+    "maximum_ms": 1303.8259,
+    "mpc_status_counts": {
+      "0": 125
+    },
+    "mpc_fallback_calls": 0,
+    "qp_execution_path_counts": {
+      "hard_qp_solution": 110,
+      "phase2_solution": 15
+    }
+  }
+}

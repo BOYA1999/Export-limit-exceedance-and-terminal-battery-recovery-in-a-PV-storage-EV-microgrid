@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "controller": "PPO-QP",
+      "budget": 15,
+      "day": 266,
+      "first_positive_gap_step": 94,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 15,
+      "day": 268,
+      "first_positive_gap_step": 94,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 15,
+      "day": 280,
+      "first_positive_gap_step": 94,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 30,
+      "day": 241,
+      "first_positive_gap_step": 94,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 30,
+      "day": 248,
+      "first_positive_gap_step": 95,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 30,
+      "day": 249,
+      "first_positive_gap_step": 94,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 30,
+      "day": 261,
+      "first_positive_gap_step": 95,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 30,
+      "day": 262,
+      "first_positive_gap_step": 94,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 30,
+      "day": 266,
+      "first_positive_gap_step": 94,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 30,
+      "day": 267,
+      "first_positive_gap_step": 95,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 30,
+      "day": 280,
+      "first_positive_gap_step": 94,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP",
+      "budget": 45,
+      "day": 285,
+      "first_positive_gap_step": 95,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP-no-penalty",
+      "budget": 15,
+      "day": 259,
+      "first_positive_gap_step": 95,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    },
+    {
+      "controller": "PPO-QP-no-penalty",
+      "budget": 15,
+      "day": 273,
+      "first_positive_gap_step": 95,
+      "first_gap_kw": 2.8421709430404014e-14,
+      "first_gap_roundoff_scale": true
+    }
+  ],
+  "all_14_first_gaps_roundoff_scale": true
+}

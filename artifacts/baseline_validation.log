@@ -1,0 +1,4 @@
+rule validation cap=35 days=60 complete
+rule validation cap=60 days=60 complete
+rule validation cap=100 days=60 complete
+NetLoadRule cap frozen: 60 kW

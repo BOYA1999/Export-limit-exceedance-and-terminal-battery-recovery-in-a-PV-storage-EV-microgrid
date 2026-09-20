@@ -1,0 +1,7 @@
+phase,status,calls,mip_gap_min,mip_gap_median,mip_gap_max
+phase1,optimal_accepted,6217,,,
+phase1,time_limit_accepted,8,0.003375408115233888,0.005058873740508743,0.010005462196870516
+phase1,no_accepted_incumbent,15,,,
+phase2,optimal_accepted,6184,,,
+phase2,time_limit_accepted,26,0.0024415315663164627,0.006819827004607653,0.028726001604729816
+phase2,no_accepted_incumbent,15,,,

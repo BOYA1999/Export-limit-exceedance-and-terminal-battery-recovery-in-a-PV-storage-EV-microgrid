@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "episodes": 650,
+  "steps": 62400,
+  "selection_sha256": "f87eb74f76a5895ecdbba93392d031dc68301b7c3da4330eee32aabc50eba32b",
+  "selected_budgets": {
+    "PPO-QP": 90,
+    "PPO-QP-no-penalty": 90
+  },
+  "maximum_absolute_terminal_error_kwh": 0.0,
+  "service_failures": 0,
+  "terminal_target_conflict_steps": 0,
+  "roundoff_repair_steps": 0,
+  "terminal_ramp_relaxation_steps": 650,
+  "execution_paths": {
+    "hard_qp_solution": 60346,
+    "phase2_solution": 2054
+  },
+  "audit_source_sha256": "3063c7299128f7e79adacc0cd450866ab91ddfddade29724e891a25534d8ad11"
+}

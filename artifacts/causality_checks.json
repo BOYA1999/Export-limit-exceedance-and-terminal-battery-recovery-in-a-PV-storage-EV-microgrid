@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "train_preprocessing_holdout_perturbation_invariant": true,
+  "training_values_holdout_perturbation_invariant": true,
+  "forecast_checks": [
+    {
+      "day": 0,
+      "step": 0,
+      "future_perturbation_invariant": true
+    },
+    {
+      "day": 239,
+      "step": 95,
+      "future_perturbation_invariant": true
+    },
+    {
+      "day": 240,
+      "step": 0,
+      "future_perturbation_invariant": true
+    },
+    {
+      "day": 299,
+      "step": 95,
+      "future_perturbation_invariant": true
+    },
+    {
+      "day": 300,
+      "step": 0,
+      "future_perturbation_invariant": true
+    },
+    {
+      "day": 364,
+      "step": 95,
+      "future_perturbation_invariant": true
+    }
+  ],
+  "latent_ratio": 1.0,
+  "rule_service_boundary_checks": 6
+}

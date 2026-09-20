@@ -1,0 +1,19 @@
+{
+  "selected_cap_kw": 60,
+  "hashes": {
+    "PLAN.md": "fa9d281f24fd989c606b5935cb222eb9234b74d9432ac38033427ab79c78c042",
+    "baseline_protocol.md": "9b2006766b80af7af18bc10f0ca257917eeb1db1015ea290cf4d3bc7da7c33d6",
+    "configs\\experiment.json": "1ab590e844b1b47dd1248e937caea784e04af90baf4ba49a0a77f1bd4dd0a1df",
+    "src\\run_experiment.py": "672112a01aff61283b0024eee6d942f2502b3574946ed57ea31942fd07258267",
+    "src\\causal_run.py": "1f74767fdab1f0184be2ada2b818a9624f407718b2e5473dd6de8a63048d8c3c",
+    "src\\matched_mpc.py": "8e0a1c25f3200fe8fc764c16f4262ae8100ff90b74f73f490b5c3b707db6dd24",
+    "src\\review_baselines.py": "a4c474932a3118f9bbdf764003cc9b9e51f60f67a40fc43a582a4c13582ea863"
+  },
+  "selection_inputs": {
+    "validation_NetLoadRule_cap100.csv": "bdfe7eb3aa149d959125786efc596dd598cda6d148b2239154373c08cdaf145f",
+    "validation_NetLoadRule_cap35.csv": "23b9d509f48152f45b4fa1c02b5bda9b857991d1d349fe587055eaeaf87e46c2",
+    "validation_NetLoadRule_cap60.csv": "b1fb0df16f9b64bd7a23fa5f4da1bc58218050ef555b43ef1d84789779701d9b"
+  },
+  "selected_utc": "2026-09-08T11:57:00.518363+00:00",
+  "test_evaluation_not_started": true
+}

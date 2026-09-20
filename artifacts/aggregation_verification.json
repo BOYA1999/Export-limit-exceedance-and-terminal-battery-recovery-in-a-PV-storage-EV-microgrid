@@ -1,0 +1,324 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "test_seed_20260805.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "test_seed_20260805.csv"
+    },
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "test_seed_20260806.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "test_seed_20260806.csv"
+    },
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "test_seed_20260807.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "test_seed_20260807.csv"
+    },
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "test_seed_20260808.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "test_seed_20260808.csv"
+    },
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "test_seed_20260809.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "test_seed_20260809.csv"
+    },
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "baseline_Rule+QP.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "baseline_Rule+QP.csv"
+    },
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "baseline_NetLoadRule+QP.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "baseline_NetLoadRule+QP.csv"
+    },
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "baseline_MPC-H24+QP.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "baseline_MPC-H24+QP.csv"
+    },
+    {
+      "check": "daily_schema",
+      "passed": true,
+      "file": "baseline_MPC-H24-FRR+QP.csv",
+      "missing": []
+    },
+    {
+      "check": "daily_all_numeric_finite",
+      "passed": true,
+      "file": "baseline_MPC-H24-FRR+QP.csv"
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_seed_20260805.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_seed_20260805.csv"
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_seed_20260806.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_seed_20260806.csv"
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_seed_20260807.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_seed_20260807.csv"
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_seed_20260808.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_seed_20260808.csv"
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_seed_20260809.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_seed_20260809.csv"
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_Rule+QP.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_Rule+QP.csv"
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_NetLoadRule+QP.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_NetLoadRule+QP.csv"
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_MPC-H24+QP.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_MPC-H24+QP.csv"
+    },
+    {
+      "check": "solver_diagnostic_finite_or_explicitly_unavailable_on_fallback",
+      "passed": true,
+      "file": "trajectory_MPC-H24+QP.csv",
+      "column": "mpc_mip_gap",
+      "unavailable_count": 13
+    },
+    {
+      "check": "solver_diagnostic_finite_or_explicitly_unavailable_on_fallback",
+      "passed": true,
+      "file": "trajectory_MPC-H24+QP.csv",
+      "column": "mpc_constraint_violation_max",
+      "unavailable_count": 13
+    },
+    {
+      "check": "trajectory_schema",
+      "passed": true,
+      "file": "trajectory_MPC-H24-FRR+QP.csv",
+      "missing": []
+    },
+    {
+      "check": "trajectory_required_numeric_finite",
+      "passed": true,
+      "file": "trajectory_MPC-H24-FRR+QP.csv"
+    },
+    {
+      "check": "solver_diagnostic_finite_or_explicitly_unavailable_on_fallback",
+      "passed": true,
+      "file": "trajectory_MPC-H24-FRR+QP.csv",
+      "column": "mpc_mip_gap",
+      "unavailable_count": 0
+    },
+    {
+      "check": "solver_diagnostic_finite_or_explicitly_unavailable_on_fallback",
+      "passed": true,
+      "file": "trajectory_MPC-H24-FRR+QP.csv",
+      "column": "mpc_constraint_violation_max",
+      "unavailable_count": 0
+    },
+    {
+      "check": "exchange_components_reconcile",
+      "passed": true
+    },
+    {
+      "check": "exact_daily_keys_without_baseline_replication",
+      "passed": true
+    },
+    {
+      "check": "daily_source_file_scope",
+      "passed": true
+    },
+    {
+      "check": "test_only_and_96_steps_per_day",
+      "passed": true
+    },
+    {
+      "check": "trajectory_complete_87360_steps",
+      "passed": true
+    },
+    {
+      "check": "separate_policy_baseline_denominators",
+      "passed": true
+    },
+    {
+      "check": "full_common_service",
+      "passed": true,
+      "ev_tolerance_kwh": 1e-08,
+      "maximum_absolute_ev_residual_kwh": 3.8857805861880484e-16
+    },
+    {
+      "check": "independent_endpoint_formula",
+      "passed": true
+    },
+    {
+      "check": "independent_mutually_exclusive_endpoint_flags",
+      "passed": true
+    },
+    {
+      "check": "endpoint_categories_reconcile_actual_violations",
+      "passed": true,
+      "numeric_positive_below_audit_threshold": 0
+    },
+    {
+      "check": "extra_excess_energy_independent",
+      "passed": true
+    },
+    {
+      "check": "soc_all_steps_and_days",
+      "passed": true
+    },
+    {
+      "check": "qp_paths_exhaustive_daily",
+      "passed": true
+    },
+    {
+      "check": "trajectory_to_daily_exact_aggregation",
+      "passed": true,
+      "mismatches": []
+    },
+    {
+      "check": "task_score_excludes_training_correction_penalty_given_zero_soc_ev_errors",
+      "passed": true
+    }
+  ],
+  "denominators": {
+    "policy_days": 650,
+    "baseline_days": 260,
+    "policy_steps": 62400,
+    "baseline_steps": 24960,
+    "unique_scenario_days": 65,
+    "fixed_trained_seeds": 5
+  },
+  "source_sha256": {
+    "test_seed_20260805.csv": "fae1a35a9e9110408eea37e16c798ab340e3794c7cafab5ce51800c85fa3c5a4",
+    "test_seed_20260806.csv": "bd77d233d1fca3e2643598e2affc85ead336b03dc840c77444a176347bd65b53",
+    "test_seed_20260807.csv": "da442dc9b043dac537f0ff173ff49dbfd2062d8301379c8daf1a332b28fbf5fd",
+    "test_seed_20260808.csv": "202da65a5d5aac0258133b93284fac54e34b9ef9c57dea886e385b0be82008e8",
+    "test_seed_20260809.csv": "d2ad56b716f6d851e98c06ba9b064941a835a85cffc63326b161d33bf8290a78",
+    "baseline_Rule+QP.csv": "e3df6757ed065149d31a424c6331db81e775820fdfa6f6bf6182e45148dfc871",
+    "baseline_NetLoadRule+QP.csv": "77fef6d3245867f3874d93dfb392d6f3578506506bcff08be885b03279a241bc",
+    "baseline_MPC-H24+QP.csv": "9fb6ce962f60d31d32af7cf7433971a971dff12c8ed2311c17dadfb8c17a825f",
+    "baseline_MPC-H24-FRR+QP.csv": "68240445763e164a49db8aeed410e059460327b9c8bbb4376e2733e0310ebeba",
+    "trajectory_seed_20260805.csv": "53e0b8fd3d618b870131fdc37b85fda104bd6a66e1920148bed5d6388b08e1ea",
+    "trajectory_seed_20260806.csv": "e6ec9df21733f5164fa7eeb0f9bb9c53bea4fe47fb22916c0a7f860c56f660f4",
+    "trajectory_seed_20260807.csv": "1d14f3b6a36f54655ec7a4f8a2a47f05318e546b099e9f22cc06931ac4d1fb6d",
+    "trajectory_seed_20260808.csv": "b34533341ba1e9f70357910df9782ef6ea58326ee91173f6b1fda46fa763d835",
+    "trajectory_seed_20260809.csv": "0907daeea796f8cfae06efd32eeac77dbd9afa83140af190fc7ecbac737a9dd4",
+    "trajectory_Rule+QP.csv": "3a286c783a727d0fc7cf6ed6a29d3f6620547d2a2dd9c950918be34ce3db808b",
+    "trajectory_NetLoadRule+QP.csv": "b72e3d97c5e6e387ab36c205f627e4bab28e92dd40c6592be298f099c0fb942c",
+    "trajectory_MPC-H24+QP.csv": "2637b6a23030798a338a6276b5c7abe7e87348e7d42b63dfc1ab010946131946",
+    "trajectory_MPC-H24-FRR+QP.csv": "5cd7d4e5691e03b23d7b68aae33493b7ad6a5d25680f418eac12ae880e41d362"
+  },
+  "inference_scope": "Conditional intervals for five fixed trained seeds on a previously inspected 65-day scenario holdout. Deterministic baselines are evaluated once per day."
+}
