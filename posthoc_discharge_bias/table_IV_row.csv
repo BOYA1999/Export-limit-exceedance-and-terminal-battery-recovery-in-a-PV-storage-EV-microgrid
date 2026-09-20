@@ -1,0 +1,2 @@
+controller,steps,endpoint_infeasible,endpoint_infeasible_percent,feasible_state_violation,hard_qp_solution,phase2_solution,phase1_fallback,heuristic_fallback
+DischargeBias+QP,6240,212,3.3974358974358974,0,6028,212,0,0

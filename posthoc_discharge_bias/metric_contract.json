@@ -1,0 +1,24 @@
+{
+  "status": "comparison_ready",
+  "controller": "DischargeBias+QP",
+  "split": "fixed days 300-364, one deterministic trajectory per day",
+  "metrics": [
+    "cost",
+    "carbon",
+    "task_score",
+    "peak",
+    "grid_excess_energy_kwh",
+    "mean_action_correction",
+    "export_excess_energy_kwh",
+    "import_excess_energy_kwh"
+  ],
+  "direction": "lower is favorable for all operating metrics; correction is a diagnostic, not a safety ranking",
+  "protocol_sha256": "5cfb91b20b580a4c14d320e1c9494550e82227f7e4613ddf36c69b8ac9fa170f",
+  "summary_sha256": "930946c33e99116e03a99e2f7bed9f03260075d640e8c14ec17352eaa5c5fbcf",
+  "validation": "Independent trajectory aggregation, energy/service checks, one exact archived PPO-day replay, source hash verification",
+  "limitations": [
+    "Post-hoc diagnostic on an already inspected scenario",
+    "No cap search or training",
+    "EV proposal differs from each PPO policy; this is a complete simple controller comparator, not a pure battery-action ablation"
+  ]
+}

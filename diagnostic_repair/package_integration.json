@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "source_archive_sha256": "b414866be7d89380c3217059fceead5560dbe02087fa266df50b1d3572fc2d2d",
+  "source_archive_entries": 294,
+  "canonical_replacements": {
+    "revision_src/analyze_revision.py": {
+      "original_sha256": "4fa38d213612dad78dc6e5708371a3474258a7e3cfb1a0443e7de124233b6672",
+      "corrected_sha256": "d70fb33a194ed60f038551d90d42c03154b9455a973c376a4bef1452c8175a15"
+    },
+    "artifacts/charge_bound_diagnostics.csv": {
+      "original_sha256": "66cc3f58a5bc8a3031d1f3bffab64a6b64f123df05204451423e62c52f53a889",
+      "corrected_sha256": "66cc3f58a5bc8a3031d1f3bffab64a6b64f123df05204451423e62c52f53a889"
+    },
+    "artifacts/constraint_source_decomposition.csv": {
+      "original_sha256": "84bb95f7a4255011fb02d290d3b6d10139126b758acfe53c3b956d8699cf4aff",
+      "corrected_sha256": "4054c95f5814a74fbe4ccec78f3622a9b2a282d4944437362af2014613cd91a5"
+    },
+    "artifacts/export_event_timing.csv": {
+      "original_sha256": "bfc38b07e2dbb2d98a040683436b58c12c2cf44b42d5a1b43cd8ef3fa5d6629d",
+      "corrected_sha256": "bfc38b07e2dbb2d98a040683436b58c12c2cf44b42d5a1b43cd8ef3fa5d6629d"
+    }
+  },
+  "objective_analysis_original_sha256": "cebcd51cd8aaa39af8927e1f0c773377b64c348d02e11bac8b2ffc11bd94a146",
+  "objective_analysis_corrected_sha256": "334faf03e401521cab41e6e631c1b51b9b687a1092f4b875aef17af462e06998",
+  "posthoc_directory": "posthoc_discharge_bias",
+  "posthoc_file_count": 51,
+  "diagnostic_repair_directory": "diagnostic_repair",
+  "scope": "Archive integration only; no training, controller trajectory, manuscript, or supplementary document was modified."
+}

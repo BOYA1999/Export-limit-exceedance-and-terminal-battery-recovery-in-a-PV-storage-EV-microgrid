@@ -1,0 +1,8 @@
+Controller,Episodes,Export events,Events/day,Rating active %,Headroom active %,Terminal active %,Ramp active %
+LegacyRule,65,526,8.092,0.00,95.63,0.00,4.37
+NetLoadRule,65,295,4.538,2.37,95.59,0.00,2.03
+MPC H24,65,256,3.938,7.42,82.81,0.00,9.77
+MPC relaxed,65,270,4.154,6.67,80.74,0.00,12.59
+MPC export-first,65,260,4.000,7.31,83.46,0.00,9.23
+PPO 0.1,325,1034,3.182,10.06,79.11,0.00,10.83
+PPO 0,325,1020,3.138,10.20,77.55,0.00,12.25

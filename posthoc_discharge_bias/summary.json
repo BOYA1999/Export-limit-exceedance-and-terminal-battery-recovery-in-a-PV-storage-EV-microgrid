@@ -1,0 +1,35 @@
+{
+  "cost": 201.09878965066017,
+  "carbon": 294.4248510431662,
+  "task_score": 591.4746542076671,
+  "peak": 229.21627137480854,
+  "grid_excess_energy_kwh": 40.80846371781254,
+  "mean_action_correction": 1.0079044922687186,
+  "export_excess_energy_kwh": 40.80846371781254,
+  "import_excess_energy_kwh": 0.0,
+  "ramp_slack_kw_mean": 0.6369404000874485,
+  "max_ramp_kw": 80.17999702225256,
+  "bess_throughput_kwh": 370.17345242806977,
+  "controller": "DischargeBias+QP",
+  "episodes": 65,
+  "steps": 6240,
+  "forced_final_window_days": 65,
+  "final_window_charge_median_kwh": 105.26315789473685,
+  "final_window_charge_q25_kwh": 105.26315789473685,
+  "final_window_charge_q75_kwh": 105.26315789473685,
+  "ramp_events": 184,
+  "ramp_slack_max_kw": 53.666924857251345,
+  "lower_bound_hours_per_day": 16.846153846153847,
+  "endpoint_infeasible_steps": 212,
+  "feasible_state_violation_steps": 0,
+  "execution_paths": {
+    "hard_qp_solution": 6028,
+    "phase2_solution": 212
+  },
+  "correction_squared_shares": {
+    "battery_correction_squared": 1.0,
+    "ev_correction_squared": 2.357837025563841e-20,
+    "lighting_correction_squared": 0.0
+  },
+  "correction_rms_norm": 1.0657910677052085
+}

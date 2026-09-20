@@ -1,0 +1,28 @@
+--- revision_src/analyze_revision.py
++++ revision_src/analyze_revision.py
+@@ -119,11 +119,15 @@
+     terminal_hi = np.minimum(physical_hi, frame.terminal_upper_kw.to_numpy())
+     physical_ramp_lo, physical_ramp_hi = np.maximum(physical_lo, ramp_lo), np.minimum(physical_hi, ramp_hi)
+     tolerance = frame.tolerance_kw.to_numpy()
+-    ramp_enforced = (physical_ramp_lo <= physical_ramp_hi + tolerance) & (np.maximum(physical_ramp_lo, terminal_lo) <= np.minimum(physical_ramp_hi, terminal_hi) + tolerance)
++    ramp_enforced = (physical_ramp_lo <= physical_ramp_hi) & frame.terminal_ramp_relaxation.eq(0).to_numpy()
+     no_terminal_lo = np.where(ramp_enforced, physical_ramp_lo, physical_lo)
+     no_terminal_hi = np.where(ramp_enforced, physical_ramp_hi, physical_hi)
+     no_ramp_lo = np.maximum(physical_lo, frame.terminal_lower_kw.to_numpy())
+     no_ramp_hi = np.minimum(physical_hi, frame.terminal_upper_kw.to_numpy())
++    for lower, upper in [(no_terminal_lo, no_terminal_hi), (no_ramp_lo, no_ramp_hi)]:
++        assert np.all(lower <= frame.power_lower_kw.to_numpy() + tolerance + 1e-12)
++        assert np.all(upper >= frame.power_upper_kw.to_numpy() - tolerance - 1e-12)
++    assert np.all(frame.ev_lower_fraction.to_numpy() >= 0)
+     comparisons = {
+         'remove_terminal_envelope': endpoint_excess(frame, no_terminal_lo, no_terminal_hi, frame.ev_lower_fraction.to_numpy(), frame.ev_upper_fraction.to_numpy()),
+         'remove_ramp_interval': endpoint_excess(frame, no_ramp_lo, no_ramp_hi, frame.ev_lower_fraction.to_numpy(), frame.ev_upper_fraction.to_numpy()),
+@@ -160,6 +164,8 @@
+     effective_terminal_lo = np.where(terminal_additional, fixed_terminal_lo, -np.inf)
+     lower_without_rating = np.maximum.reduce([energy_headroom_lo, effective_terminal_lo, effective_ramp_lo])
+     lower_without_headroom = np.maximum.reduce([rated_lo, effective_terminal_lo, effective_ramp_lo])
++    assert np.all(lower_without_rating <= actual_lo + tolerance + 1e-12)
++    assert np.all(lower_without_headroom <= actual_lo + tolerance + 1e-12)
+     no_rating = endpoint_excess(frame, lower_without_rating, frame.power_upper_kw.to_numpy(), frame.ev_lower_fraction.to_numpy(), frame.ev_upper_fraction.to_numpy())
+     no_headroom = endpoint_excess(frame, lower_without_headroom, frame.power_upper_kw.to_numpy(), frame.ev_lower_fraction.to_numpy(), frame.ev_upper_fraction.to_numpy())
+     assert np.all(no_rating[0] <= actual + 1e-7) and np.all(no_headroom[0] <= actual + 1e-7)

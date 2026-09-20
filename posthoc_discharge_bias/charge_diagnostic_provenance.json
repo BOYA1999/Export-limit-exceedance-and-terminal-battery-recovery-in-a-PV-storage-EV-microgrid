@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "controller": "DischargeBias+QP",
+  "source": "Parallel statistical audit; corrected constraint-source algorithm, not an independent rerun",
+  "files": {
+    "charge_bound_diagnostic_row.csv": {
+      "source": "../diagnostic_repair/corrected_eight_controller_diagnostics/charge_bound_diagnostics.csv",
+      "source_sha256": "36626cf3f57d5341b6a9330e1c6a560bf2e0f441fe2245c3043054fcfc374fa4",
+      "output_sha256": "f8207a30719b43ff576e94112429b90670a0421c4cbc59212f110855395c9a25",
+      "rows": 1
+    },
+    "constraint_source_rows.csv": {
+      "source": "../diagnostic_repair/corrected_eight_controller_diagnostics/constraint_source_decomposition.csv",
+      "source_sha256": "ebfe57131b21bef6a9d6de7f2885b4d410ed991f30c5a7dc5496fdd779c19a46",
+      "output_sha256": "d3f9d15b1c32987cef558434013b87c94daa5c649622815283472bad06a9da7c",
+      "rows": 3
+    },
+    "export_event_timing_row.csv": {
+      "source": "../diagnostic_repair/corrected_eight_controller_diagnostics/export_event_timing.csv",
+      "source_sha256": "ce01f7d1e349f679ddbdbc1d18c9dd6c866786412a8fa244589f4112fec383c7",
+      "output_sha256": "6226e3fcffcbbc0c1e8632ac34f1d2055bf51917d0bb31b4b4de2f972bf1788d",
+      "rows": 1
+    },
+    "charge_bound_normalized_row.csv": {
+      "source": "../diagnostic_repair/charge_bound_normalized.csv",
+      "source_sha256": "324e81bc4cecb8ee413468f473a40f51a1a463e5c2689f20510fb332ce741046",
+      "output_sha256": "cdf379412f057acea2b39ba022dcd111365d9e971ad9ba5fd83c208c5e20295b",
+      "rows": 1
+    }
+  },
+  "source_algorithm_sha256": "d70fb33a194ed60f038551d90d42c03154b9455a973c376a4bef1452c8175a15",
+  "package_adaptation": "Only relative source pointers were normalized for the archive layout; hashes and scientific values are unchanged."
+}

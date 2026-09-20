@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "interval_rows": 48,
+  "bootstrap_seed": 20260908,
+  "bootstrap_function": "Unchanged AST of src/aggregate_causal.py bootstrap_indices",
+  "terminal_recovery_function": "Unchanged AST of revision_src/analyze_revision.py terminal_recovery",
+  "controller_unchanged": true,
+  "extension_protocol_sha256": "8ece199f6b60e90438bb501aa9bddc7f7fdbb23bb39b11b1352f8676735d61fb",
+  "runner_sha256": "78b9439c75e6198978a1107864af5815ab290b18e824867baae3dd32a788f78b",
+  "daily_sha256": "eb4da50cd7d870dfd4be98e267c8e14883945e430bb6314da349fcf049dd5823",
+  "trajectory_sha256": "d333aa38eb80e66bfe966b062fc58bc8230954911b9b380d31f812b7b5a24460",
+  "outputs": {
+    "daily.csv": "eb4da50cd7d870dfd4be98e267c8e14883945e430bb6314da349fcf049dd5823",
+    "paired_intervals_all_methods.csv": "a49036d99ebeae4b42f30fc0501842024b996a1dfd16d8b2b153c580996f906b",
+    "paired_PPO_minus_baseline.csv": "06755b30eff893e1b551cebd2915baf18c2cab857d7b71b3c6d879cd5bbda2fd",
+    "table_III_comparison.csv": "540d268eb6a317c5f8f37d8bc5146126ec93fd1da0d904bcc4435afe16f54df4",
+    "table_IV_row.csv": "3fe7ae2ca12adf0f659f72d2f28deee35b1144b5cd050c5cb4580c983b15c2e9",
+    "table_S10_row.csv": "786cac57fe3cca137998d5f51cbbeee6f0cc6b0cd7d04982069dbe6fd6e8058d",
+    "table_V_row.csv": "502247a95c8ebb7917a26b66324f3c490345e68dfbe8738a2384042f79d9fb64",
+    "terminal_recovery_by_controller.csv": "5866b6e33b48bf93831e70197806231d25ecd20724b5a2206e6c3466e7d5e85f",
+    "terminal_recovery_by_step.csv": "f6d48f0dafc6462931dedfad84c7c75ce98b9c2d65cd2755efa311c0ec68db83",
+    "terminal_recovery_daily.csv": "89984911da79ccb0d0bd4187b5759b89f8ed310af677623f286a20d6a33a2e48",
+    "timing_rows.csv": "85cd881bcfd9b378475c7a5b919ac58725e236bdbd48af6ebcf418ea9d3e3d34",
+    "timing_warmup_rows.csv": "4a762520c90d78143272606052d05da53812d265b10b63fe4e97a3bf6c2a05d3",
+    "trajectory.csv": "d333aa38eb80e66bfe966b062fc58bc8230954911b9b380d31f812b7b5a24460"
+  },
+  "timing": {
+    "controller": "DischargeBias+QP",
+    "calls": 125,
+    "unique_states": 25,
+    "mean_ms": 1.6559407999999998,
+    "p95_ms": 3.72602,
+    "maximum_ms": 3.9149
+  },
+  "Table_IV": {
+    "controller": "DischargeBias+QP",
+    "steps": 6240,
+    "endpoint_infeasible": 212,
+    "endpoint_infeasible_percent": 3.3974358974358974,
+    "feasible_state_violation": 0,
+    "hard_qp_solution": 6028,
+    "phase2_solution": 212,
+    "phase1_fallback": 0,
+    "heuristic_fallback": 0
+  },
+  "Table_S10": {
+    "controller": "DischargeBias+QP",
+    "episodes": 65,
+    "peak_last_hour_count": 64,
+    "peak_forced_charge_count": 64,
+    "lower_bound_hours_per_day": 16.846153846153847,
+    "upper_bound_hours_per_day": 0.0,
+    "ramp_exceed_steps": 184,
+    "mean_ramp_slack_kw": 0.6369404000874483
+  }
+}

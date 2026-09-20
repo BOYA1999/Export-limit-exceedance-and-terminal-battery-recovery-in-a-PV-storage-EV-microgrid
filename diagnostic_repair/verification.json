@@ -1,0 +1,68 @@
+{
+  "source_archive_sha256": "b414866be7d89380c3217059fceead5560dbe02087fa266df50b1d3572fc2d2d",
+  "source_members_sha256": {
+    "configs/experiment.json": "1ab590e844b1b47dd1248e937caea784e04af90baf4ba49a0a77f1bd4dd0a1df",
+    "artifacts/trajectory_Rule+QP.csv": "3a286c783a727d0fc7cf6ed6a29d3f6620547d2a2dd9c950918be34ce3db808b",
+    "artifacts/trajectory_NetLoadRule+QP.csv": "b72e3d97c5e6e387ab36c205f627e4bab28e92dd40c6592be298f099c0fb942c",
+    "artifacts/trajectory_MPC-H24+QP.csv": "2637b6a23030798a338a6276b5c7abe7e87348e7d42b63dfc1ab010946131946",
+    "artifacts/trajectory_MPC-H24-FRR+QP.csv": "5cd7d4e5691e03b23d7b68aae33493b7ad6a5d25680f418eac12ae880e41d362",
+    "artifacts/trajectory_MPC-H24-XP+QP.csv": "e385912c1d6e7488e77ba81d0fcc8a19d3191e476aeefc6248309fda9598c816",
+    "artifacts/trajectory_seed_20260805.csv": "53e0b8fd3d618b870131fdc37b85fda104bd6a66e1920148bed5d6388b08e1ea",
+    "artifacts/trajectory_seed_20260806.csv": "e6ec9df21733f5164fa7eeb0f9bb9c53bea4fe47fb22916c0a7f860c56f660f4",
+    "artifacts/trajectory_seed_20260807.csv": "1d14f3b6a36f54655ec7a4f8a2a47f05318e546b099e9f22cc06931ac4d1fb6d",
+    "artifacts/trajectory_seed_20260808.csv": "b34533341ba1e9f70357910df9782ef6ea58326ee91173f6b1fda46fa763d835",
+    "artifacts/trajectory_seed_20260809.csv": "0907daeea796f8cfae06efd32eeac77dbd9afa83140af190fc7ecbac737a9dd4",
+    "additional_baseline/trajectory.csv": "d333aa38eb80e66bfe966b062fc58bc8230954911b9b380d31f812b7b5a24460",
+    "artifacts/charge_bound_diagnostics.csv": "66cc3f58a5bc8a3031d1f3bffab64a6b64f123df05204451423e62c52f53a889",
+    "artifacts/baseline_MPC-H24+QP.csv": "9fb6ce962f60d31d32af7cf7433971a971dff12c8ed2311c17dadfb8c17a825f",
+    "artifacts/baseline_MPC-H24-XP+QP.csv": "bb3df2b33463201c79584e5cbc5cefbb4b775467919667340dd313dbab2cd9a5",
+    "artifacts/export_priority_comparison.csv": "240918941266f7f84b5ddc091824c19581c57b62d71a2f689668195202030870",
+    "artifacts/paired_intervals.csv": "69f316e1596a185ad3e227f045582e3aecbc55fdbbb35dd864fa542ee4d95788",
+    "artifacts/test_seed_20260805.csv": "fae1a35a9e9110408eea37e16c798ab340e3794c7cafab5ce51800c85fa3c5a4",
+    "artifacts/test_seed_20260806.csv": "bd77d233d1fca3e2643598e2affc85ead336b03dc840c77444a176347bd65b53",
+    "artifacts/test_seed_20260807.csv": "da442dc9b043dac537f0ff173ff49dbfd2062d8301379c8daf1a332b28fbf5fd",
+    "artifacts/test_seed_20260808.csv": "202da65a5d5aac0258133b93284fac54e34b9ef9c57dea886e385b0be82008e8",
+    "artifacts/test_seed_20260809.csv": "d2ad56b716f6d851e98c06ba9b064941a835a85cffc63326b161d33bf8290a78",
+    "artifacts/figure2_export_priority_intervals.csv": "e21c47e405c6c65b144ef1077efab67d773f38d31332167f4093fbe132adf1d0"
+  },
+  "numpy_version": "1.26.4",
+  "day_cluster": {
+    "rng": "NumPy default_rng / PCG64",
+    "seed": 20260918,
+    "replicates": 20000,
+    "algorithm": "For S17, iterate metrics in stored order; independently draw a 20000 by 65 integer index matrix for each metric from one seeded RNG. Percentile endpoints use numpy.quantile at 0.025 and 0.975.",
+    "metric_order": [
+      "cost",
+      "carbon",
+      "task_score",
+      "peak",
+      "grid_excess_energy_kwh",
+      "grid_export_violation_kwh",
+      "ramp_slack_kw_mean",
+      "max_ramp_kw"
+    ]
+  },
+  "new_circular_blocks": {
+    "rng": "NumPy default_rng / PCG64",
+    "seed": 20260920,
+    "replicates": 20000,
+    "length_order": [
+      7,
+      14
+    ],
+    "algorithm": "At each length L, draw 20000 by ceil(65/L) uniform starts in [0,64]. Append L consecutive indices modulo 65 for each start; concatenate blocks and truncate to 65. Reuse these date-index matrices for every S17 metric and the PPO-versus-export-first peak contrast. Each replicate is the mean of 65 paired differences.",
+    "conditioning": "Fixed controllers, five fixed PPO policies where applicable, inspected 65-day chronological scenario; no seed, site, policy-selection or solver-rerun resampling."
+  },
+  "existing_figure2_peak_intervals": "Original five comparators retain verified archive intervals, using seed 20260908 and day-cluster followed by length-7 and length-14 circular sampling. XP day interval retains seed 20260918 (cost then peak then export); new XP block intervals use the new shared block matrices.",
+  "checks": {
+    "trace_rows": 99840,
+    "controller_count": 8,
+    "charge_bound_recompute_max_absolute_error": 7.105427357601002e-15,
+    "s17_day_interval_recompute_max_absolute_error": 1.1102230246251565e-16,
+    "all_removed_intervals_are_supersets_with_recorded_tolerance": true,
+    "diagnostic_ramp_branch_mismatch_steps": 48,
+    "diagnostic_ramp_branch_mismatch_export_events": 0,
+    "minimum_export_never_increases": true,
+    "no_original_archive_change": true
+  }
+}

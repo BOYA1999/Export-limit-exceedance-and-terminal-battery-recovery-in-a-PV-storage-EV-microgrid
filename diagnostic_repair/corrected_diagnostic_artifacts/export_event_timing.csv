@@ -1,0 +1,8 @@
+controller,export_infeasible_steps,earliest_step,latest_step,events_steps_0_23,events_steps_24_47,events_steps_48_71,events_steps_72_95,events_last_five_actions_91_95,events_last_four_actions_92_95
+Rule+QP,526,32,59,0,260,266,0,0,0
+NetLoadRule+QP,295,32,59,0,90,205,0,0,0
+MPC-H24+QP,256,32,59,0,80,176,0,0,0
+MPC-H24-FRR+QP,270,32,59,0,92,178,0,0,0
+MPC-H24-XP+QP,260,32,59,0,80,180,0,0,0
+PPO-QP,1034,36,59,0,308,726,0,0,0
+PPO-QP-no-penalty,1020,36,59,0,314,706,0,0,0

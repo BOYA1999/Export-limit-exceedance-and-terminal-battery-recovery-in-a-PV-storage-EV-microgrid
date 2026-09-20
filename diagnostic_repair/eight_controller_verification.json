@@ -1,0 +1,10 @@
+{
+  "controllers": 8,
+  "steps": 99840,
+  "episodes": 1040,
+  "superset_checks_all_steps": true,
+  "independent_charge_calculation_max_error": 7.105427357601002e-15,
+  "baseline_seed_convention": 0,
+  "baseline_source": "../baseline_experiment/trajectory.csv",
+  "original_baseline_file_modified": false
+}

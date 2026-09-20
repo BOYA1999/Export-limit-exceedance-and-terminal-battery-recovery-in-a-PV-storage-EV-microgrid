@@ -1,0 +1,24 @@
+{
+  "verified_steps": 93600,
+  "legacy_branch_mismatch_steps": 48,
+  "legacy_no_terminal_interval_not_superset_steps": 48,
+  "mismatch_export_events": 0,
+  "numeric_checks": {
+    "constraint_source_decomposition.csv": {
+      "same_rows": 21,
+      "maximum_numeric_difference": 0.46026377533748886
+    },
+    "charge_bound_diagnostics.csv": {
+      "same_rows": 7,
+      "maximum_numeric_difference": 0.0
+    },
+    "export_event_timing.csv": {
+      "same_rows": 7,
+      "maximum_numeric_difference": 0.0
+    }
+  },
+  "changed_values_over_1e-10": 3,
+  "all_fixed_relaxed_intervals_are_supersets_with_recorded_tolerance": true,
+  "terminal_energy_tolerance_kwh": 1e-08,
+  "interval_tolerance": "stored tolerance_kw (3.8e-8 kW) plus 1e-12 kW floating arithmetic margin"
+}

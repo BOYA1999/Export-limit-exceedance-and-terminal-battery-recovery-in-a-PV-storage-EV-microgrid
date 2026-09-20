@@ -1,0 +1,12 @@
+{
+  "specified_at_utc": "2026-09-19T18:38:05.535004+00:00",
+  "purpose": "Supplementary reporting requested after first diagnostic run; controller and physical trajectories unchanged.",
+  "resampling": "Reuse archived bootstrap_indices exactly: seed 20260908, 20000 replicates, day clusters plus circular blocks 7/14, original eight metrics.",
+  "timing": "Same archived 25 restored validation states, one excluded warmup plus five calls, observation/proposal/QP/model step timed. Separate serial follow-up run; no claim of simultaneous timing conditions.",
+  "source_hashes": {
+    "src/aggregate_causal.py": "1950fa72eaec24b0e81b62d16214810aa81911c3b91b837b5cacc5b9dbe09387",
+    "src/timing_common_states.py": "69f493625dcf793a2b83df6577f1fec5d64e1e141470524f022675efd87e933a",
+    "revision_src/analyze_revision.py": "4fa38d213612dad78dc6e5708371a3474258a7e3cfb1a0443e7de124233b6672",
+    "artifacts/timing_state_protocol.json": "826fcd5e04ee47e4bd1b1cce334e8657ea7a99aab0a8a8b53c7a409f5c9723f7"
+  }
+}

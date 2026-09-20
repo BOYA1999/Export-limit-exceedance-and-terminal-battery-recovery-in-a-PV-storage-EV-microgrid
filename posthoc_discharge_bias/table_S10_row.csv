@@ -1,0 +1,2 @@
+controller,episodes,peak_last_hour_count,peak_forced_charge_count,lower_bound_hours_per_day,upper_bound_hours_per_day,ramp_exceed_steps,mean_ramp_slack_kw
+DischargeBias+QP,65,64,64,16.846153846153847,0.0,184,0.6369404000874483

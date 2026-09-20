@@ -1,0 +1,245 @@
+{
+  "completed_at_utc": "2026-09-19T18:39:27.071068+00:00",
+  "archived_states_sha256": "826fcd5e04ee47e4bd1b1cce334e8657ea7a99aab0a8a8b53c7a409f5c9723f7",
+  "states": [
+    {
+      "state_id": 0,
+      "day": 240,
+      "step": 0,
+      "soc_kwh": 125.0,
+      "previous_battery_power_kw": 0.0,
+      "ev_remaining_kwh": 49.89618336111704,
+      "observation_sha256": "2b4211cbd79804f7ef3f85b1a89e82df7bf16a2b8c248fddf79a93c6d3d3a361"
+    },
+    {
+      "state_id": 1,
+      "day": 240,
+      "step": 24,
+      "soc_kwh": 174.8749999071004,
+      "previous_battery_power_kw": 8.703540294401073e-09,
+      "ev_remaining_kwh": 5.518732026921214e-09,
+      "observation_sha256": "a628cc3e6f0872f36e1beedba7757634ca5435dc4f907bc88f1f4250d244138c"
+    },
+    {
+      "state_id": 2,
+      "day": 240,
+      "step": 48,
+      "soc_kwh": 206.82058968885622,
+      "previous_battery_power_kw": -55.94950002157035,
+      "ev_remaining_kwh": 5.518732026921214e-09,
+      "observation_sha256": "d9c2f9c2b9d1f45a726a28e86a9307f54654dc54e96ae44fd313aa052d419db3"
+    },
+    {
+      "state_id": 3,
+      "day": 240,
+      "step": 72,
+      "soc_kwh": 224.99999998757377,
+      "previous_battery_power_kw": 1.1798051699569961e-08,
+      "ev_remaining_kwh": 5.518732026921214e-09,
+      "observation_sha256": "86bc37c2af6e78d0d7778d7472e2d7c7168d7c74af57550f2dd8e7f40b567249"
+    },
+    {
+      "state_id": 4,
+      "day": 240,
+      "step": 95,
+      "soc_kwh": 151.3157894699408,
+      "previous_battery_power_kw": 100.0,
+      "ev_remaining_kwh": 0.0,
+      "observation_sha256": "5354db7df50869e869d443dbddc7f14fe21234bd9947cdaf15b21df8698f56e7"
+    },
+    {
+      "state_id": 5,
+      "day": 252,
+      "step": 0,
+      "soc_kwh": 125.0,
+      "previous_battery_power_kw": 0.0,
+      "ev_remaining_kwh": 47.33178020001557,
+      "observation_sha256": "47be75e4261bcba00aaa1f73ad887d95610d1fbcda3d2bd14918ee1e4ab69775"
+    },
+    {
+      "state_id": 6,
+      "day": 252,
+      "step": 24,
+      "soc_kwh": 149.93749991712215,
+      "previous_battery_power_kw": 8.70354092981808e-09,
+      "ev_remaining_kwh": 5.520045864848555e-09,
+      "observation_sha256": "b3c10cab736975459aaaed9c758dfd102e0bec3dcece17bf33220157406235cc"
+    },
+    {
+      "state_id": 7,
+      "day": 252,
+      "step": 48,
+      "soc_kwh": 225.0,
+      "previous_battery_power_kw": -0.0,
+      "ev_remaining_kwh": 5.520045864848555e-09,
+      "observation_sha256": "0c611c76751aa1dce1177f2462ed8207974251363d3fa68496f0bda44595f4b4"
+    },
+    {
+      "state_id": 8,
+      "day": 252,
+      "step": 72,
+      "soc_kwh": 224.99999999695976,
+      "previous_battery_power_kw": -5.373819707331302e-14,
+      "ev_remaining_kwh": 5.520045864848555e-09,
+      "observation_sha256": "5086db91937bb0baefb76b7eaf31fea8268b7f3588ea120122d30440447a3848"
+    },
+    {
+      "state_id": 9,
+      "day": 252,
+      "step": 95,
+      "soc_kwh": 151.31578946993613,
+      "previous_battery_power_kw": 100.0,
+      "ev_remaining_kwh": 0.0,
+      "observation_sha256": "d7677b7695f8790f2720c1f6b8a23e6f722f1c01edfea54b6ee9b21ee1a10a06"
+    },
+    {
+      "state_id": 10,
+      "day": 264,
+      "step": 0,
+      "soc_kwh": 125.0,
+      "previous_battery_power_kw": 0.0,
+      "ev_remaining_kwh": 30.848460833630362,
+      "observation_sha256": "547e85c5629c16c566dd6cebba40348ca2b3734ab585a619d61df477491f8678"
+    },
+    {
+      "state_id": 11,
+      "day": 264,
+      "step": 24,
+      "soc_kwh": 141.6249999228099,
+      "previous_battery_power_kw": 8.707478539104724e-09,
+      "ev_remaining_kwh": 5.5187317493654575e-09,
+      "observation_sha256": "6379cff4108b36a467725fa666f6b545abea0e98d08443d210b138588c229a4c"
+    },
+    {
+      "state_id": 12,
+      "day": 264,
+      "step": 48,
+      "soc_kwh": 225.0,
+      "previous_battery_power_kw": -0.0,
+      "ev_remaining_kwh": 5.5187317493654575e-09,
+      "observation_sha256": "ff156604f7cad8518fb9669774d468c01611fae14adb049065aa942f6093c19e"
+    },
+    {
+      "state_id": 13,
+      "day": 264,
+      "step": 72,
+      "soc_kwh": 224.99999999379685,
+      "previous_battery_power_kw": 1.2019035384046068e-08,
+      "ev_remaining_kwh": 5.5187317493654575e-09,
+      "observation_sha256": "ce856821c19eec3268da5c5c70f7935feb25e024ccac9dbee1bca45d296cdd91"
+    },
+    {
+      "state_id": 14,
+      "day": 264,
+      "step": 95,
+      "soc_kwh": 151.31578946993613,
+      "previous_battery_power_kw": 100.0,
+      "ev_remaining_kwh": 0.0,
+      "observation_sha256": "e6c69cce8b88f4eac3d0269a229c006fc2d0682c76d155e99416719cf58cec7c"
+    },
+    {
+      "state_id": 15,
+      "day": 276,
+      "step": 0,
+      "soc_kwh": 125.0,
+      "previous_battery_power_kw": 0.0,
+      "ev_remaining_kwh": 49.97054489530535,
+      "observation_sha256": "3e88edc31d035c2f62bcc2a9b547c46648d324fd4b08162ec0eedcd0f232ad0b"
+    },
+    {
+      "state_id": 16,
+      "day": 276,
+      "step": 24,
+      "soc_kwh": 166.56249990379285,
+      "previous_battery_power_kw": 8.703531121799543e-09,
+      "ev_remaining_kwh": 5.518732137943516e-09,
+      "observation_sha256": "333dd38314e22e1e6dfcf643daff63cad675447088b6051d16cacb8fe250f1b5"
+    },
+    {
+      "state_id": 17,
+      "day": 276,
+      "step": 48,
+      "soc_kwh": 225.0,
+      "previous_battery_power_kw": -0.0,
+      "ev_remaining_kwh": 5.518732137943516e-09,
+      "observation_sha256": "debc1e15dd3f53cbf583bd29ad128db6ff8bc5a65b7fb832bcea5f1b99eecc1f"
+    },
+    {
+      "state_id": 18,
+      "day": 276,
+      "step": 72,
+      "soc_kwh": 224.99999999695976,
+      "previous_battery_power_kw": -5.373819707331302e-14,
+      "ev_remaining_kwh": 5.518732137943516e-09,
+      "observation_sha256": "56c2435aaec8cbe002bddcecd286a8b43295d78379dda1bc0918f3bb2a2ebf37"
+    },
+    {
+      "state_id": 19,
+      "day": 276,
+      "step": 95,
+      "soc_kwh": 151.31578946994077,
+      "previous_battery_power_kw": 100.0,
+      "ev_remaining_kwh": 0.0,
+      "observation_sha256": "0cde7fb7bdefcb6b8fb3eabd65b998a4cd8899646034b8c6834eaa9001c3e29e"
+    },
+    {
+      "state_id": 20,
+      "day": 288,
+      "step": 0,
+      "soc_kwh": 125.0,
+      "previous_battery_power_kw": 0.0,
+      "ev_remaining_kwh": 40.6259197255402,
+      "observation_sha256": "384075da2b13a63a1eb26d965e274c30ff9cd581ffda0d4e1bb1db2f3f9b4df0"
+    },
+    {
+      "state_id": 21,
+      "day": 288,
+      "step": 24,
+      "soc_kwh": 183.18749991151026,
+      "previous_battery_power_kw": 8.707478539104722e-09,
+      "ev_remaining_kwh": 5.518731638343155e-09,
+      "observation_sha256": "8ff52bb7fbd7056881c009b4f6b4644c4bfd97801e545aed7ee9249d58883902"
+    },
+    {
+      "state_id": 22,
+      "day": 288,
+      "step": 48,
+      "soc_kwh": 162.5809076072338,
+      "previous_battery_power_kw": -23.375141126857706,
+      "ev_remaining_kwh": 5.518731638343155e-09,
+      "observation_sha256": "96c1ac5239aded651448be054ba884999043dbf8bc75bb2dc7f3c51a64cdded1"
+    },
+    {
+      "state_id": 23,
+      "day": 288,
+      "step": 72,
+      "soc_kwh": 203.52494604498756,
+      "previous_battery_power_kw": 8.1438384799416e-09,
+      "ev_remaining_kwh": 5.518731638343155e-09,
+      "observation_sha256": "6f8681a1982ab2a7d2f6d0299704660d8e1ca17e69e2d4510937cb684c2802b7"
+    },
+    {
+      "state_id": 24,
+      "day": 288,
+      "step": 95,
+      "soc_kwh": 151.31578946864124,
+      "previous_battery_power_kw": 100.0,
+      "ev_remaining_kwh": 3.3306690738754696e-16,
+      "observation_sha256": "938bb6493fc112a563e86f8702193dcf4e21dbc3f3752da44cf462048cd2f80d"
+    }
+  ],
+  "timed_scope": "Same observation/proposal/QP/full model step as the original common-state protocol. Environment construction, reset and restoration, identity checks and serialization excluded.",
+  "warmups": 25,
+  "timed_calls": 125,
+  "execution": "separate serial follow-up; original seven controllers were not retimed",
+  "thread_variables": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "qp_paths": {
+    "hard_qp_solution": 110,
+    "phase2_solution": 15
+  },
+  "maximum_within_state_power_spread_kw": 0.0
+}

@@ -1,0 +1,9 @@
+controller,actual_export_infeasible_steps,active_rated_charge_power_steps,active_energy_headroom_steps,active_terminal_lower_envelope_steps,active_ramp_lower_bound_steps,resolved_export_steps_remove_charge_rating,resolved_export_steps_remove_energy_headroom,mean_daily_export_minimum_change_remove_charge_rating_kwh,mean_daily_export_minimum_change_remove_energy_headroom_kwh,active_counts_nonexclusive
+MPC-H24+QP,256,19,212,0,25,12,100,-0.8128784819808547,-31.148580923905424,True
+MPC-H24-FRR+QP,270,18,218,0,34,13,102,-0.9166952997114971,-31.881599682727376,True
+MPC-H24-XP+QP,260,19,217,0,24,13,105,-0.8801936886893426,-31.641571553311223,True
+NetLoadRule+QP,295,7,282,0,6,5,131,-0.4197105179882394,-41.188517063354915,True
+Rule+QP,526,0,503,0,23,0,258,-5.848313286640824e-15,-68.36279998859028,True
+PPO-QP,1034,104,818,0,112,80,335,-0.9897928800032626,-25.2170225613919,True
+PPO-QP-no-penalty,1020,104,791,0,125,80,317,-0.9897932925652347,-24.52229904407206,True
+DischargeBias+QP,212,22,150,0,40,17,59,-1.0037811149050384,-23.25529974349965,True

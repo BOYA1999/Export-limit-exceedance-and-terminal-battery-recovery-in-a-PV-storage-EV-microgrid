@@ -1,0 +1,4 @@
+controller,one_step_counterfactual,steps,actual_endpoint_infeasible_steps,actual_import_infeasible_steps,actual_export_infeasible_steps,resolved_endpoint_infeasible_steps,resolved_import_infeasible_steps,resolved_export_infeasible_steps,new_endpoint_infeasible_steps,mean_change_minimum_excess_kw_all_steps,mean_change_attainable_grid_width_kw_all_steps,mean_daily_change_minimum_excess_kwh,subset_check_passed,monotonic_excess_check_passed
+DischargeBias+QP,remove_terminal_envelope,6240,212,0,212,0,0,0,0,2.2773805633336544e-18,2.8651315789473686,5.465713352000771e-17,True,True
+DischargeBias+QP,remove_ramp_interval,6240,212,0,212,39,0,39,0,-0.0574081830841304,62.68753289991949,-1.377796394019131,True,True
+DischargeBias+QP,remove_ev_lower_bound,6240,212,0,212,0,0,0,0,0.0,2.2822350277424562e-11,0.0,True,True

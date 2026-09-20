@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "trajectory_rows": 93600,
+  "controllers": [
+    "Rule+QP",
+    "NetLoadRule+QP",
+    "MPC-H24+QP",
+    "MPC-H24-FRR+QP",
+    "MPC-H24-XP+QP",
+    "PPO-QP",
+    "PPO-QP-no-penalty"
+  ],
+  "split_rows": 3,
+  "terminal_summary_rows": 7,
+  "terminal_step_rows": 112,
+  "constraint_rows": 21,
+  "charge_bound_rows": 7,
+  "event_timing_rows": 7,
+  "comparison_rows": 8,
+  "figure2_added_rows": 3,
+  "solver_stage_rows": 6,
+  "repeat_rows": 2,
+  "source_sha256": {
+    "split_difficulty.csv": "da33da7ecac4134cb1965cde77e18daaefdfbc1974facd8b3c653988a39402b4",
+    "terminal_recovery_daily.csv": "08ec0dfc63765e14abe53be8d4f63b9ab158b80d3716d75c05b0c9077b1dc372",
+    "terminal_recovery_by_controller.csv": "8960ea76a618efb5797f519374fdf363cbbf8309abc5fdc5b7c19e3474da4bb5",
+    "terminal_recovery_by_step.csv": "951239b5595a5b04fe78eae56f82c1431dee466362d63b9e40245b687e26a9a4",
+    "constraint_source_decomposition.csv": "84bb95f7a4255011fb02d290d3b6d10139126b758acfe53c3b956d8699cf4aff",
+    "charge_bound_diagnostics.csv": "66cc3f58a5bc8a3031d1f3bffab64a6b64f123df05204451423e62c52f53a889",
+    "export_event_timing.csv": "bfc38b07e2dbb2d98a040683436b58c12c2cf44b42d5a1b43cd8ef3fa5d6629d",
+    "export_priority_comparison.csv": "240918941266f7f84b5ddc091824c19581c57b62d71a2f689668195202030870",
+    "figure2_export_priority_intervals.csv": "e21c47e405c6c65b144ef1077efab67d773f38d31332167f4093fbe132adf1d0",
+    "mpc_export_priority_solver_stage_summary.csv": "964f4a4a3ab39df586ef85400c656315b2bc74efe0ce8ea314d134be9c5161e2",
+    "export_priority_repeat_sensitivity.csv": "6a8b68c6d4a3962f8191a1d925b0240c49a3bc65a5a88546a18907ae979b144b"
+  }
+}

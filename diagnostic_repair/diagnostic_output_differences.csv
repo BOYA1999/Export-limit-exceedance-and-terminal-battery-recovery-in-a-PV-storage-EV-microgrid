@@ -1,0 +1,4 @@
+file,key,metric,before,after,change
+constraint_source_decomposition.csv,"('MPC-H24+QP', 'remove_terminal_envelope')",mean_change_attainable_grid_width_kw_all_steps,0.8721962099486632,1.332459985286152,0.46026377533748886
+constraint_source_decomposition.csv,"('MPC-H24-XP+QP', 'remove_terminal_envelope')",mean_change_attainable_grid_width_kw_all_steps,0.887620889432901,1.3324599852845478,0.4448390958516468
+constraint_source_decomposition.csv,"('PPO-QP-no-penalty', 'remove_terminal_envelope')",mean_change_attainable_grid_width_kw_all_steps,2.86192645074134,2.8651315789473686,0.0032051282060288067

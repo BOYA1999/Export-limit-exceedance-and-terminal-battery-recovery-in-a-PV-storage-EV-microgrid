@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-09-19T18:34:30.574214+00:00",
+  "reference_day": 300,
+  "reference_ppo_seed": 20260805,
+  "reference_daily_max_difference": 5.684341886080802e-14,
+  "reference_step_max_difference": 2.842170943040401e-14,
+  "reference_qp_paths_identical": true,
+  "independently_recomputed_metrics": [
+    "cost",
+    "carbon",
+    "task_score",
+    "grid_excess_energy_kwh",
+    "peak",
+    "mean_action_correction",
+    "battery_energy_balance",
+    "EV_delivery"
+  ],
+  "episodes": 65,
+  "steps": 6240,
+  "service_failures": 0,
+  "source_hashes_unchanged": true,
+  "protocol_sha256": "5cfb91b20b580a4c14d320e1c9494550e82227f7e4613ddf36c69b8ac9fa170f",
+  "runner_sha256": "e5771dcd1595a95d960a15f423adefcefe2a95fed8f8fff9d19a0470720cf734",
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "osqp": "1.1.1"
+  },
+  "outputs": {
+    "daily.csv": "eb4da50cd7d870dfd4be98e267c8e14883945e430bb6314da349fcf049dd5823",
+    "paired_PPO_minus_baseline.csv": "06755b30eff893e1b551cebd2915baf18c2cab857d7b71b3c6d879cd5bbda2fd",
+    "table_III_comparison.csv": "540d268eb6a317c5f8f37d8bc5146126ec93fd1da0d904bcc4435afe16f54df4",
+    "trajectory.csv": "d333aa38eb80e66bfe966b062fc58bc8230954911b9b380d31f812b7b5a24460"
+  }
+}
