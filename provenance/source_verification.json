@@ -1,0 +1,239 @@
+{
+  "status": "passed",
+  "accessed_at_utc": "2026-09-08T09:48:04.994189+00:00",
+  "accessed_date_asia_shanghai": "2026-09-08",
+  "scope": "Official source identity and terms verification for four public modeled/profile inputs; no physical-plant validation or public repository release",
+  "official_urls": {
+    "dataset205": "https://data.nlr.gov/submissions/205",
+    "dataset205_license": "https://data.nlr.gov/node/205/license",
+    "california_archive": "https://data.nlr.gov/system/files/205/California-1679428758.zip",
+    "pvwatts_documentation": "https://developer.nlr.gov/docs/solar/pvwatts/v8/",
+    "pvwatts_terms": "https://developer.nlr.gov/terms/",
+    "pvwatts_endpoint": "https://developer.nlr.gov/api/pvwatts/v8.json"
+  },
+  "csv_comparisons": [
+    {
+      "local_file": "../data/annual_load_pattern_CAMX_baseline.csv",
+      "archive_member": "California/annual_load_pattern_CAMX_baseline.csv",
+      "local_sha256": "23b2b22da47c8173627261d4afd96e8f6539ebdd6145175aa3c08d302a875630",
+      "official_member_sha256": "23b2b22da47c8173627261d4afd96e8f6539ebdd6145175aa3c08d302a875630",
+      "exact_bytes_match": true,
+      "records": 8760,
+      "columns": [
+        "region",
+        "datetime",
+        "units",
+        "load_data",
+        "scenario",
+        "measures"
+      ],
+      "first_record": {
+        "region": "CAMX",
+        "datetime": "2023-01-01 00:00:00",
+        "units": "kWh",
+        "load_data": "66.71107323458878",
+        "scenario": "baseline",
+        "measures": "hvac_dr_ee"
+      },
+      "last_record": {
+        "region": "CAMX",
+        "datetime": "2023-12-31 23:00:00",
+        "units": "kWh",
+        "load_data": "65.45104020079688",
+        "scenario": "baseline",
+        "measures": "hvac_dr_ee"
+      },
+      "native_first_timestamp": "2023-01-01 00:00:00",
+      "native_last_timestamp": "2023-12-31 23:00:00"
+    },
+    {
+      "local_file": "../data/cambium_grid_data_California_cambium_grid_value.csv",
+      "archive_member": "California/cambium_grid_data_California_cambium_grid_value.csv",
+      "local_sha256": "2c93b5e048698ce96992047c628517b74cebe48d587ba34c0ea8208513104ff2",
+      "official_member_sha256": "2c93b5e048698ce96992047c628517b74cebe48d587ba34c0ea8208513104ff2",
+      "exact_bytes_match": true,
+      "records": 8760,
+      "columns": [
+        "state",
+        "year",
+        "timestamp",
+        "variable",
+        "value"
+      ],
+      "first_record": {
+        "state": "CA",
+        "year": "2022",
+        "timestamp": "2022-01-01 00:00:00",
+        "variable": "cambium_grid_value",
+        "value": "31.14"
+      },
+      "last_record": {
+        "state": "CA",
+        "year": "2022",
+        "timestamp": "2022-12-31 23:00:00",
+        "variable": "cambium_grid_value",
+        "value": "34.62"
+      },
+      "native_first_timestamp": "2022-01-01 00:00:00",
+      "native_last_timestamp": "2022-12-31 23:00:00"
+    },
+    {
+      "local_file": "../data/cambium_grid_data_California_cambium_co2_rate_lrmer.csv",
+      "archive_member": "California/cambium_grid_data_California_cambium_co2_rate_lrmer.csv",
+      "local_sha256": "7f166c8c400b89a61d227478f58575cf52021fb29e342af22a8c28c1f9dd68af",
+      "official_member_sha256": "7f166c8c400b89a61d227478f58575cf52021fb29e342af22a8c28c1f9dd68af",
+      "exact_bytes_match": true,
+      "records": 8760,
+      "columns": [
+        "state",
+        "year",
+        "timestamp",
+        "variable",
+        "value"
+      ],
+      "first_record": {
+        "state": "CA",
+        "year": "2022",
+        "timestamp": "2022-01-01 00:00:00",
+        "variable": "cambium_co2_rate_lrmer",
+        "value": "104.5"
+      },
+      "last_record": {
+        "state": "CA",
+        "year": "2022",
+        "timestamp": "2022-12-31 23:00:00",
+        "variable": "cambium_co2_rate_lrmer",
+        "value": "93.2"
+      },
+      "native_first_timestamp": "2022-01-01 00:00:00",
+      "native_last_timestamp": "2022-12-31 23:00:00"
+    }
+  ],
+  "pvwatts_comparison": {
+    "local_file": "../data/pvwatts_pasadena_1kw.json",
+    "local_sha256": "b5604630e16bfe4aa8cefae779c1a258aaeecbdaaf89626ee47ff936e061caa1",
+    "inputs": {
+      "azimuth": "180",
+      "system_capacity": "1",
+      "losses": "14",
+      "array_type": "1",
+      "module_type": "1",
+      "tilt": "20",
+      "lat": "34.1478",
+      "lon": "-118.1445",
+      "timeframe": "hourly",
+      "dc_ac_ratio": "1.2",
+      "gcr": "0.4",
+      "inv_eff": "96",
+      "radius": "0",
+      "dataset": "nsrdb"
+    },
+    "local_version": "8.5.0",
+    "official_replay_version": "8.5.0",
+    "local_station_info": {
+      "lat": 34.13000106811523,
+      "lon": -118.1399993896484,
+      "elev": 239.9499969482422,
+      "tz": -8.0,
+      "location": "84341",
+      "city": "",
+      "state": "California",
+      "country": "United States",
+      "solar_resource_file": "84341.csv",
+      "distance": 2031,
+      "weather_data_source": "NSRDB PSM V3 GOES tmy-2020 3.2.0"
+    },
+    "official_replay_station_info": {
+      "lat": 34.13000106811523,
+      "lon": -118.1399993896484,
+      "elev": 239.9499969482422,
+      "tz": -8.0,
+      "location": "84341",
+      "city": "",
+      "state": "California",
+      "country": "United States",
+      "solar_resource_file": "84341.csv",
+      "distance": 2031,
+      "weather_data_source": "NSRDB PSM V3 GOES tmy-2020 3.2.0"
+    },
+    "local_records": 8760,
+    "official_replay_records": 8760,
+    "compared_records": 8760,
+    "changed_ac_values": 0,
+    "maximum_absolute_ac_difference_w": 0.0,
+    "local_ac_annual_kwh": 1683.362064011327,
+    "official_replay_ac_annual_kwh": 1683.362064011327,
+    "official_errors": [],
+    "official_warnings": [],
+    "hourly_comparison_file": "pvwatts_hourly_comparison.csv"
+  },
+  "calendar_and_evidence_boundary": {
+    "camx_load": "Modeled large-office baseline load; local native timestamp year 2023, not a measured microgrid load record.",
+    "cambium": "California scenario output from StdScen20_MidCase in dataset 205; local native year field and timestamp year 2022, not retail tariff or measured simultaneous marginal emissions.",
+    "pvwatts": "PVWatts simulated hourly AC output from NSRDB PSM V3 GOES tmy-2020 3.2.0, station 84341; TMY-2020 denotes a typical-meteorological-year resource version, not 8760 observations collected at a microgrid during calendar 2020.",
+    "alignment": "The experiment aligns the 8760 positions by hour-of-year in a constructed benchmark. The four inputs do not establish a contemporaneous measured site. EV demand, occupancy, perturbations and control plant parameters are model assumptions."
+  },
+  "remote_retrieval_metadata": {
+    "dataset205": {
+      "official_request_url_without_credential": "https://data.nlr.gov/submissions/205",
+      "http_status": 200,
+      "accessed_at_utc": "2026-09-08T09:48:10.601777+00:00",
+      "retrieved_content_sha256": "5fd8eea5badfe4c0d4312e0bc05ccb75b22552c90bbed39be05d121d58540634",
+      "retrieved_bytes": 409216
+    },
+    "dataset205_license": {
+      "official_request_url_without_credential": "https://data.nlr.gov/node/205/license",
+      "http_status": 200,
+      "accessed_at_utc": "2026-09-08T09:48:15.850752+00:00",
+      "retrieved_content_sha256": "b3cb96d16c07c7850f2ec61b36a24b86b9f88ff7c33fa17343491786b05d26b6",
+      "retrieved_bytes": 23639
+    },
+    "pvwatts_documentation": {
+      "official_request_url_without_credential": "https://developer.nlr.gov/docs/solar/pvwatts/v8/",
+      "http_status": 200,
+      "accessed_at_utc": "2026-09-08T09:48:22.060966+00:00",
+      "retrieved_content_sha256": "f0abdceca73bf9971346d47d0a1d7819df28298a18e5972aa396a6ccffd4aa02",
+      "retrieved_bytes": 75963
+    },
+    "pvwatts_terms": {
+      "official_request_url_without_credential": "https://developer.nlr.gov/terms/",
+      "http_status": 200,
+      "accessed_at_utc": "2026-09-08T09:48:27.948906+00:00",
+      "retrieved_content_sha256": "9b4a9eca3ce21676d64db1e75a82562985fb7fc0f78daedc307ae52d23ac3e0c",
+      "retrieved_bytes": 14609
+    },
+    "california_archive": {
+      "official_request_url_without_credential": "https://data.nlr.gov/system/files/205/California-1679428758.zip",
+      "http_status": 200,
+      "accessed_at_utc": "2026-09-08T09:48:40.388231+00:00",
+      "retrieved_content_sha256": "d471d50c91e94ca4b52f626e9677445062910bf6a208acbfaed00c01122b3e0e",
+      "retrieved_bytes": 4640165
+    },
+    "pvwatts_replay": {
+      "official_request_url_without_credential": "https://developer.nlr.gov/api/pvwatts/v8.json?azimuth=180&system_capacity=1&losses=14&array_type=1&module_type=1&tilt=20&lat=34.1478&lon=-118.1445&timeframe=hourly&dc_ac_ratio=1.2&gcr=0.4&inv_eff=96&radius=0&dataset=nsrdb",
+      "http_status": 200,
+      "accessed_at_utc": "2026-09-08T09:48:47.214342+00:00",
+      "retrieved_content_sha256": "b5604630e16bfe4aa8cefae779c1a258aaeecbdaaf89626ee47ff936e061caa1",
+      "retrieved_bytes": 411312
+    }
+  },
+  "bundled_licenses": [
+    {
+      "bundled_file": "provenance/licenses/dataset205_license.txt",
+      "official_url": "https://data.nlr.gov/node/205/license",
+      "accessed_date": "2026-09-08",
+      "original_html_sha256": "b3cb96d16c07c7850f2ec61b36a24b86b9f88ff7c33fa17343491786b05d26b6",
+      "full_notice_text_sha256": "0be1d287ae47c13a7c6aea3cdbf5f968b998b043d31d5125fab14d422b6b6334",
+      "extraction": "All substantive notice paragraphs copied verbatim as plain text; only surrounding site HTML and the general institutional footer omitted."
+    },
+    {
+      "bundled_file": "provenance/licenses/pvwatts_developer_terms.txt",
+      "official_url": "https://developer.nlr.gov/terms/",
+      "accessed_date": "2026-09-08",
+      "original_html_sha256": "9b4a9eca3ce21676d64db1e75a82562985fb7fc0f78daedc307ae52d23ac3e0c",
+      "full_notice_text_sha256": "65a8c63c220a53dbaa8dec60825d1639600655a805173a81d2b3c9de7e08c224",
+      "extraction": "All substantive notice paragraphs copied verbatim as plain text; only surrounding site HTML and the general institutional footer omitted."
+    }
+  ],
+  "packaging_note": "Curated derivative of the local verification record. Original source arrays and 8760-row comparison are unchanged. Raw landing-page HTML, API documentation HTML and the duplicate replay-response JSON are omitted. This summary retains source identity, official request parameters, retrieval hashes and numerical comparison evidence."
+}
